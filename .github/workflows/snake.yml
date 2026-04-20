@@ -2,7 +2,7 @@ name: Generate Snake Animation
 
 on:
   schedule:
-    # Every 6 hours for fresher data
+    # Every 6 hours
     - cron: "0 */6 * * *"
   workflow_dispatch:
   push:
@@ -16,8 +16,6 @@ permissions:
 jobs:
   build:
     runs-on: ubuntu-latest
-    env:
-      FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true
     
     steps:
       - name: Clone repository
@@ -30,7 +28,7 @@ jobs:
           outputs: |
             dist/github-contribution-grid-snake.svg
             dist/github-contribution-grid-snake-dark.svg?palette=github-dark&color_snake=#f75c7e
-            dist/ocean.gif?color_snake=#00d2ff&color_dots=#0a192f,#112240,#1d3557,#457b9d,#a8dadc&color_background=#0a192f
+            dist/ocean.svg?color_snake=#00d2ff&color_dots=#0a192f,#112240,#1d3557,#457b9d,#a8dadc
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           

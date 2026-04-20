@@ -153,7 +153,7 @@ I am an AI & Data Science undergraduate with a strong foundation in **machine le
 
 <div align="center">
   <h4>🌊 Ocean Theme</h4>
-  <img src="https://raw.githubusercontent.com/ParthK0/ParthK0/output/ocean.gif" alt="Ocean Snake" />
+  <img src="https://raw.githubusercontent.com/ParthK0/ParthK0/output/ocean.svg" alt="Ocean Snake" />
 </div>
 
 ---
