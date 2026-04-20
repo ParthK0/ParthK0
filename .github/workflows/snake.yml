@@ -2,8 +2,8 @@ name: Generate Snake Animation
 
 on:
   schedule:
-    # Every 12 hours
-    - cron: "0 */12 * * *"
+    # Every 6 hours for fresher data
+    - cron: "0 */6 * * *"
   workflow_dispatch:
   push:
     branches:
@@ -23,13 +23,14 @@ jobs:
       - name: Clone repository
         uses: actions/checkout@v4
         
-      - name: Generate github-contribution-grid-snake.svg
+      - name: Generate Snake Animations
         uses: Platane/snk/svg-only@v3
         with:
           github_user_name: ${{ github.repository_owner }}
           outputs: |
             dist/github-contribution-grid-snake.svg
-            dist/github-contribution-grid-snake-dark.svg?palette=github-dark
+            dist/github-contribution-grid-snake-dark.svg?palette=github-dark&color_snake=#f75c7e
+            dist/ocean.gif?color_snake=#00d2ff&color_dots=#0a192f,#112240,#1d3557,#457b9d,#a8dadc&color_background=#0a192f
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           
