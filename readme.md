@@ -111,7 +111,7 @@ I am an AI & Data Science undergraduate with a strong foundation in **machine le
 ## <img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Travel%20and%20places/Trophy.png" alt="Trophy" width="28" /> &nbsp;GitHub Trophies
 
 <div align="center">
-  <img src="https://github-profile-trophy.vercel.app/?username=ParthK0&theme=radical&no-frame=true&no-bg=true&margin-w=6&column=7" alt="Trophies" />
+  <img src="https://github-profile-trophies.vercel.app/?username=ParthK0&theme=radical&no-frame=true&no-bg=true&margin-w=6&column=7" alt="Trophies" />
 </div>
 
 ---
@@ -142,17 +142,6 @@ I am an AI & Data Science undergraduate with a strong foundation in **machine le
 ## 🐍 My Contributions Snake
 
 <div align="center">
-  <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/ParthK0/ParthK0/output/github-contribution-grid-snake-dark.svg">
-    <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/ParthK0/ParthK0/output/github-contribution-grid-snake.svg">
-    <img alt="github contribution grid snake animation" src="https://raw.githubusercontent.com/ParthK0/ParthK0/output/github-contribution-grid-snake-dark.svg">
-  </picture>
-</div>
-
-<br/>
-
-<div align="center">
-  <h4>🌊 Ocean Theme</h4>
   <img src="https://raw.githubusercontent.com/ParthK0/ParthK0/output/ocean.svg" alt="Ocean Snake" />
 </div>
 
