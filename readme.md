@@ -1,4 +1,4 @@
-<img src="https://capsule-render.vercel.app/api?type=waving&color=0:f75c7e,50:8b5cf6,100:06b6d4&height=220&section=header&text=Parth%20Khowal&fontSize=50&fontColor=ffffff&animation=fadeIn&fontAlignY=35&desc=AI%20%26%20Data%20Science%20%7C%20Full%20Stack%20Developer%20%7C%20Tech%20Enthusiast&descAlignY=55&descSize=18" width="100%"/>
+<img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=2&height=220&section=header&text=Parth%20Khowal&fontSize=60&fontColor=ffffff&animation=fadeIn&fontAlignY=40&desc=AI%20and%20Data%20Science%20Undergrad&descSize=20&descAlignY=60" width="100%"/>
 
 <div align="center">
 
@@ -172,4 +172,4 @@ I am an AI & Data Science undergraduate with a strong foundation in **machine le
 
 <br/>
 
-<img src="https://capsule-render.vercel.app/api?type=waving&color=0:f75c7e,50:8b5cf6,100:06b6d4&height=120&section=footer" width="100%" />
+<img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=2&height=120&section=footer" width="100%" />
