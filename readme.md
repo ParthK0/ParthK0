@@ -1,6 +1,6 @@
-<div align="center">
-  <img src="./assets/hero.svg" width="100%" alt="Parth Khowal — Building intelligent solutions with AI, data and code."/>
-</div>
+<p align="center">
+  <img src="assets/hero.svg" width="100%" alt="Parth Khowal — Building intelligent solutions with AI, data and code." />
+</p>
 
 <br/>
 
@@ -10,7 +10,7 @@
 
 <div align="center">
 
-| <img src="./assets/card-develop.svg" width="100%" alt="DEVELOP"/> | <img src="./assets/card-learn.svg" width="100%" alt="LEARN"/> | <img src="./assets/card-analyze.svg" width="100%" alt="ANALYZE"/> | <img src="./assets/card-innovate.svg" width="100%" alt="INNOVATE"/> | <img src="./assets/card-impact.svg" width="100%" alt="CREATE IMPACT"/> |
+| <img src="assets/card-develop.svg" width="100%" alt="DEVELOP"/> | <img src="assets/card-learn.svg" width="100%" alt="LEARN"/> | <img src="assets/card-analyze.svg" width="100%" alt="ANALYZE"/> | <img src="assets/card-innovate.svg" width="100%" alt="INNOVATE"/> | <img src="assets/card-impact.svg" width="100%" alt="CREATE IMPACT"/> |
 |:---:|:---:|:---:|:---:|:---:|
 
 </div>
@@ -61,7 +61,7 @@ I don't just prototype — I ship. From real-time facial recognition engines to 
 </tr>
 </table>
 
-<img src="./assets/divider.svg" width="100%" alt=""/>
+<img src="assets/divider.svg" width="100%" alt=""/>
 
 <!-- ═══════════════════════════════════════════════════════════ -->
 <!-- FEATURED PROJECTS -->
@@ -171,7 +171,7 @@ Full-stack quantitative research and analytics platform built on Next.js with Ty
 
 </details>
 
-<img src="./assets/divider.svg" width="100%" alt=""/>
+<img src="assets/divider.svg" width="100%" alt=""/>
 
 <!-- ═══════════════════════════════════════════════════════════ -->
 <!-- TECH STACK -->
@@ -246,7 +246,7 @@ Full-stack quantitative research and analytics platform built on Next.js with Ty
 </tr>
 </table>
 
-<img src="./assets/divider.svg" width="100%" alt=""/>
+<img src="assets/divider.svg" width="100%" alt=""/>
 
 <!-- ═══════════════════════════════════════════════════════════ -->
 <!-- GITHUB ANALYTICS & ACTIVITY -->
@@ -276,7 +276,7 @@ Full-stack quantitative research and analytics platform built on Next.js with Ty
 
 </div>
 
-<img src="./assets/divider.svg" width="100%" alt=""/>
+<img src="assets/divider.svg" width="100%" alt=""/>
 
 <!-- ═══════════════════════════════════════════════════════════ -->
 <!-- CONTRIBUTION SNAKE -->
@@ -300,9 +300,16 @@ Full-stack quantitative research and analytics platform built on Next.js with Ty
 <!-- FOOTER -->
 <!-- ═══════════════════════════════════════════════════════════ -->
 
-<div align="center">
-  <img src="./assets/footer.svg" width="100%" alt="Let's build something intelligent together."/>
-</div>
+<p align="center">
+  <img src="assets/footer.svg" width="100%" alt="Let's build something intelligent together." />
+</p>
+
+<p align="center">
+  <a href="https://www.linkedin.com/in/parth-khowal-a37903294/"><img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=flat-square&logo=linkedin&logoColor=white" alt="LinkedIn"/></a>&nbsp;
+  <a href="mailto:parthkhowal222@gmail.com"><img src="https://img.shields.io/badge/Email-6366F1?style=flat-square&logo=gmail&logoColor=white" alt="Email"/></a>&nbsp;
+  <a href="https://github.com/ParthK0"><img src="https://img.shields.io/badge/GitHub-0F172A?style=flat-square&logo=github&logoColor=white" alt="GitHub"/></a>&nbsp;
+  <a href="https://www.linkedin.com/in/parth-khowal-a37903294/"><img src="https://img.shields.io/badge/Let's_Connect!-0D9488?style=flat-square&logo=google-chrome&logoColor=white" alt="Connect"/></a>
+</p>
 
 <div align="center">
 

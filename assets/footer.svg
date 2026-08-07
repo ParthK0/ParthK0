@@ -78,6 +78,9 @@
         0% { opacity: 0.2; transform: scale(0.7); }
         100% { opacity: 1; transform: scale(1.2); }
       }
+
+      a { cursor: pointer; text-decoration: none; }
+      a:hover rect { fill: #F1F5F9; }
     </style>
 
     <!-- Gradients -->
@@ -158,16 +161,18 @@
     </text>
   </g>
 
-  <!-- 4 Contact / Social Pill Buttons Row -->
+  <!-- 4 Contact / Social Pill Buttons Row with Links -->
   <g transform="translate(500, 260)">
 
     <!-- Button 1: LinkedIn -->
-    <g transform="translate(-320, 0)">
-      <rect width="140" height="46" rx="23" fill="#FFFFFF" filter="url(#pillShadow)"/>
-      <rect x="16" y="13" width="20" height="20" rx="4" fill="#0A66C2"/>
-      <text x="22" y="27" font-family="sans-serif" font-weight="bold" font-size="12" fill="#FFFFFF">in</text>
-      <text x="44" y="28" class="pill-text">/parth-khowal</text>
-    </g>
+    <a href="https://www.linkedin.com/in/parth-khowal-a37903294/" target="_blank">
+      <g transform="translate(-320, 0)">
+        <rect width="140" height="46" rx="23" fill="#FFFFFF" filter="url(#pillShadow)"/>
+        <rect x="16" y="13" width="20" height="20" rx="4" fill="#0A66C2"/>
+        <text x="22" y="27" font-family="sans-serif" font-weight="bold" font-size="12" fill="#FFFFFF">in</text>
+        <text x="44" y="28" class="pill-text">/parth-khowal</text>
+      </g>
+    </a>
 
     <!-- Connecting Dot 1 -->
     <g transform="translate(-165, 23)">
@@ -176,12 +181,14 @@
     </g>
 
     <!-- Button 2: Email -->
-    <g transform="translate(-150, 0)">
-      <rect width="220" height="46" rx="23" fill="#FFFFFF" filter="url(#pillShadow)"/>
-      <rect x="14" y="15" width="20" height="15" rx="3" fill="none" stroke="#6366F1" stroke-width="2"/>
-      <path d="M14 18 L24 25 L34 18" stroke="#6366F1" stroke-width="2" stroke-linecap="round" fill="none"/>
-      <text x="42" y="28" class="pill-text">parthkhowal222@gmail.com</text>
-    </g>
+    <a href="mailto:parthkhowal222@gmail.com">
+      <g transform="translate(-150, 0)">
+        <rect width="220" height="46" rx="23" fill="#FFFFFF" filter="url(#pillShadow)"/>
+        <rect x="14" y="15" width="20" height="15" rx="3" fill="none" stroke="#6366F1" stroke-width="2"/>
+        <path d="M14 18 L24 25 L34 18" stroke="#6366F1" stroke-width="2" stroke-linecap="round" fill="none"/>
+        <text x="42" y="28" class="pill-text">parthkhowal222@gmail.com</text>
+      </g>
+    </a>
 
     <!-- Connecting Dot 2 -->
     <g transform="translate(85, 23)">
@@ -190,12 +197,14 @@
     </g>
 
     <!-- Button 3: GitHub -->
-    <g transform="translate(100, 0)">
-      <rect width="126" height="46" rx="23" fill="#FFFFFF" filter="url(#pillShadow)"/>
-      <circle cx="30" cy="23" r="10" fill="#0F172A"/>
-      <path d="M26 25 C26 22 28 19 30 19 C32 19 34 22 34 25 C34 27 33 29 30 29 C27 29 26 27 26 25 Z M28 22 C28 22 29 21 30 21 C31 21 32 22 32 22" fill="#FFFFFF"/>
-      <text x="48" y="28" class="pill-text">/ParthK0</text>
-    </g>
+    <a href="https://github.com/ParthK0" target="_blank">
+      <g transform="translate(100, 0)">
+        <rect width="126" height="46" rx="23" fill="#FFFFFF" filter="url(#pillShadow)"/>
+        <circle cx="30" cy="23" r="10" fill="#0F172A"/>
+        <path d="M26 25 C26 22 28 19 30 19 C32 19 34 22 34 25 C34 27 33 29 30 29 C27 29 26 27 26 25 Z M28 22 C28 22 29 21 30 21 C31 21 32 22 32 22" fill="#FFFFFF"/>
+        <text x="48" y="28" class="pill-text">/ParthK0</text>
+      </g>
+    </a>
 
     <!-- Connecting Dot 3 -->
     <g transform="translate(241, 23)">
@@ -204,26 +213,23 @@
     </g>
 
     <!-- Button 4: Let's Connect! -->
-    <g transform="translate(255, 0)">
-      <rect width="150" height="46" rx="23" fill="#FFFFFF" filter="url(#pillShadow)"/>
-      <circle cx="28" cy="23" r="9" fill="none" stroke="#0D9488" stroke-width="2"/>
-      <line x1="19" y1="23" x2="37" y2="23" stroke="#0D9488" stroke-width="1.5"/>
-      <ellipse cx="28" cy="23" rx="4" ry="9" fill="none" stroke="#0D9488" stroke-width="1.5"/>
-      <text x="44" y="28" class="pill-text">Let's Connect!</text>
-    </g>
+    <a href="https://www.linkedin.com/in/parth-khowal-a37903294/" target="_blank">
+      <g transform="translate(255, 0)">
+        <rect width="150" height="46" rx="23" fill="#FFFFFF" filter="url(#pillShadow)"/>
+        <circle cx="28" cy="23" r="9" fill="none" stroke="#0D9488" stroke-width="2"/>
+        <line x1="19" y1="23" x2="37" y2="23" stroke="#0D9488" stroke-width="1.5"/>
+        <ellipse cx="28" cy="23" rx="4" ry="9" fill="none" stroke="#0D9488" stroke-width="1.5"/>
+        <text x="44" y="28" class="pill-text">Let's Connect!</text>
+      </g>
+    </a>
 
   </g>
 
   <!-- 🌊 Continuous Animated Layered Waves & Footer Text -->
   <g transform="translate(0, 330)">
-    
-    <!-- Secondary Wave Layer -->
     <path class="footer-wave-2" d="M-200,50 C50,10 250,90 500,40 C750,-10 950,70 1200,30 L1200,150 L-200,150 Z" fill="url(#footerWaveGrad2)"/>
-
-    <!-- Primary Wave Layer -->
     <path class="footer-wave-1" d="M-200,70 C150,30 380,90 650,50 C850,10 1000,75 1200,45 L1200,150 L-200,150 Z" fill="url(#footerWaveGrad1)"/>
 
-    <!-- Thank You Text -->
     <g transform="translate(500, 115)" text-anchor="middle">
       <path d="M-6 -2 C-9 -5 -13 -2 -11 2 C-9 6 0 11 0 11 C0 11 9 6 11 2 C13 -2 9 -5 6 -2 C4 0 0 3 0 3 C0 3 -4 0 -6 -2 Z" fill="none" stroke="#67E8F9" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" transform="translate(-185, -12) scale(0.85)"/>
       <text x="0" y="0" class="bottom-thankyou">
