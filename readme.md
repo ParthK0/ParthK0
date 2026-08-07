@@ -1,11 +1,11 @@
 <div align="center">
-  <img src="./assets/hero.svg" width="100%" alt="Parth Khowal — AI & Data Science · Full-Stack Engineer"/>
+  <img src="./assets/hero.svg" width="100%" alt="Parth Khowal — Building intelligent solutions with AI, data and code."/>
 </div>
 
 <br/>
 
 <!-- ═══════════════════════════════════════════════════════════ -->
-<!-- ABOUT -->
+<!-- ABOUT & QUICK STATS -->
 <!-- ═══════════════════════════════════════════════════════════ -->
 
 <table>
@@ -26,10 +26,10 @@ I don't just prototype — I ship. From real-time facial recognition engines to 
 
 <br/>
 
-<a href="mailto:parthkhowal222@gmail.com"><img src="https://img.shields.io/badge/Email-f75c7e?style=flat-square&logo=gmail&logoColor=white" alt="Email"/></a>&nbsp;
-<a href="https://www.linkedin.com/in/parth-khowal-a37903294/"><img src="https://img.shields.io/badge/LinkedIn-8b5cf6?style=flat-square&logo=linkedin&logoColor=white" alt="LinkedIn"/></a>&nbsp;
-<a href="https://leetcode.com/u/pk1662005/"><img src="https://img.shields.io/badge/LeetCode-06b6d4?style=flat-square&logo=leetcode&logoColor=white" alt="LeetCode"/></a>&nbsp;
-<a href="https://instagram.com/parthkhowal222"><img src="https://img.shields.io/badge/Instagram-f59e0b?style=flat-square&logo=instagram&logoColor=white" alt="Instagram"/></a>
+<a href="https://www.linkedin.com/in/parth-khowal-a37903294/"><img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=flat-square&logo=linkedin&logoColor=white" alt="LinkedIn"/></a>&nbsp;
+<a href="mailto:parthkhowal222@gmail.com"><img src="https://img.shields.io/badge/Email-6366F1?style=flat-square&logo=gmail&logoColor=white" alt="Email"/></a>&nbsp;
+<a href="https://leetcode.com/u/pk1662005/"><img src="https://img.shields.io/badge/LeetCode-0284C7?style=flat-square&logo=leetcode&logoColor=white" alt="LeetCode"/></a>&nbsp;
+<a href="https://instagram.com/parthkhowal222"><img src="https://img.shields.io/badge/Instagram-E4405F?style=flat-square&logo=instagram&logoColor=white" alt="Instagram"/></a>
 
 </td>
 <td width="45%" valign="top">
@@ -38,9 +38,9 @@ I don't just prototype — I ship. From real-time facial recognition engines to 
 
 <div align="center">
 
-<img src="https://github-readme-stats.vercel.app/api?username=ParthK0&theme=transparent&hide_border=true&include_all_commits=true&count_private=true&show_icons=true&icon_color=f75c7e&title_color=8b5cf6&text_color=a0a0c0&ring_color=f75c7e&bg_color=00000000" width="100%" alt="GitHub Stats"/>
+<img src="https://github-readme-stats.vercel.app/api?username=ParthK0&show_icons=true&icon_color=2563eb&title_color=1e293b&text_color=475569&bg_color=ffffff&border_color=e2e8f0&border_radius=12&include_all_commits=true&count_private=true" width="100%" alt="GitHub Stats"/>
 
-<img src="https://streak-stats.demolab.com?user=ParthK0&theme=transparent&hide_border=true&ring=f75c7e&fire=f75c7e&currStreakLabel=f75c7e&sideLabels=8b5cf6&dates=4a4a6a&currStreakNum=a0a0c0&sideNums=a0a0c0&background=00000000" width="100%" alt="GitHub Streak"/>
+<img src="https://streak-stats.demolab.com?user=ParthK0&theme=light&hide_border=false&border_radius=12&ring=2563eb&fire=3b82f6&currStreakLabel=2563eb&sideLabels=4f46e5&dates=64748b&currStreakNum=0f172a&sideNums=0f172a&background=ffffff&border=e2e8f0" width="100%" alt="GitHub Streak"/>
 
 </div>
 
@@ -80,7 +80,7 @@ Real-time facial recognition attendance platform using DNN-based face detection 
 
 <div align="center">
 
-[![Repo](https://img.shields.io/badge/View_Repo-12122a?style=flat-square&logo=github&logoColor=white)](https://github.com/ParthK0/FaceRecognitionJavaFX)
+[![Repo](https://img.shields.io/badge/View_Repo-0F172A?style=flat-square&logo=github&logoColor=white)](https://github.com/ParthK0/FaceRecognitionJavaFX)
 
 </div>
 
@@ -107,7 +107,7 @@ SaaS platform educating voters across 6+ nations. Integrated Google Gemini AI as
 
 <div align="center">
 
-[![Repo](https://img.shields.io/badge/View_Repo-12122a?style=flat-square&logo=github&logoColor=white)](https://github.com/ParthK0/election)
+[![Repo](https://img.shields.io/badge/View_Repo-0F172A?style=flat-square&logo=github&logoColor=white)](https://github.com/ParthK0/election)
 
 </div>
 
@@ -134,8 +134,8 @@ Full-stack quantitative research and analytics platform built on Next.js with Ty
 
 <div align="center">
 
-[![Repo](https://img.shields.io/badge/View_Repo-12122a?style=flat-square&logo=github&logoColor=white)](https://github.com/ParthK0/Quantacraft)
-[![Live](https://img.shields.io/badge/Live_Demo-f75c7e?style=flat-square&logo=vercel&logoColor=white)](https://quantacraft.vercel.app)
+[![Repo](https://img.shields.io/badge/View_Repo-0F172A?style=flat-square&logo=github&logoColor=white)](https://github.com/ParthK0/Quantacraft)
+[![Live](https://img.shields.io/badge/Live_Demo-2563EB?style=flat-square&logo=vercel&logoColor=white)](https://quantacraft.vercel.app)
 
 </div>
 
@@ -172,20 +172,20 @@ Full-stack quantitative research and analytics platform built on Next.js with Ty
 
 **Languages**
 
-![Python](https://img.shields.io/badge/Python-3670A0?style=flat-square&logo=python&logoColor=ffdd54)
-![Java](https://img.shields.io/badge/Java-ED8B00?style=flat-square&logo=openjdk&logoColor=white)
-![TypeScript](https://img.shields.io/badge/TypeScript-007ACC?style=flat-square&logo=typescript&logoColor=white)
-![JavaScript](https://img.shields.io/badge/JavaScript-323330?style=flat-square&logo=javascript&logoColor=F7DF1E)
-![C](https://img.shields.io/badge/C-00599C?style=flat-square&logo=c&logoColor=white)
+![Python](https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white)
+![Java](https://img.shields.io/badge/Java-007396?style=flat-square&logo=openjdk&logoColor=white)
+![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white)
+![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=flat-square&logo=javascript&logoColor=black)
+![C](https://img.shields.io/badge/C-A8B9CC?style=flat-square&logo=c&logoColor=black)
 
 </td>
 <td valign="top" width="25%">
 
 **Frontend**
 
-![React](https://img.shields.io/badge/React-20232a?style=flat-square&logo=react&logoColor=61DAFB)
-![Next.js](https://img.shields.io/badge/Next.js-000?style=flat-square&logo=next.js&logoColor=white)
-![TailwindCSS](https://img.shields.io/badge/Tailwind-38B2AC?style=flat-square&logo=tailwind-css&logoColor=white)
+![React](https://img.shields.io/badge/React-61DAFB?style=flat-square&logo=react&logoColor=black)
+![Next.js](https://img.shields.io/badge/Next.js-000000?style=flat-square&logo=next.js&logoColor=white)
+![TailwindCSS](https://img.shields.io/badge/Tailwind-06B6D4?style=flat-square&logo=tailwind-css&logoColor=white)
 ![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=flat-square&logo=html5&logoColor=white)
 ![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=flat-square&logo=css3&logoColor=white)
 
@@ -194,11 +194,11 @@ Full-stack quantitative research and analytics platform built on Next.js with Ty
 
 **Backend & Cloud**
 
-![Node.js](https://img.shields.io/badge/Node.js-6DA55F?style=flat-square&logo=node.js&logoColor=white)
-![FastAPI](https://img.shields.io/badge/FastAPI-005571?style=flat-square&logo=fastapi&logoColor=white)
-![Firebase](https://img.shields.io/badge/Firebase-039BE5?style=flat-square&logo=firebase)
+![Node.js](https://img.shields.io/badge/Node.js-5FA04E?style=flat-square&logo=node.js&logoColor=white)
+![FastAPI](https://img.shields.io/badge/FastAPI-009688?style=flat-square&logo=fastapi&logoColor=white)
+![Firebase](https://img.shields.io/badge/Firebase-FFCA28?style=flat-square&logo=firebase&logoColor=black)
 ![Google Cloud](https://img.shields.io/badge/GCP-4285F4?style=flat-square&logo=google-cloud&logoColor=white)
-![Azure](https://img.shields.io/badge/Azure-0072C6?style=flat-square&logo=microsoftazure&logoColor=white)
+![Azure](https://img.shields.io/badge/Azure-0089D6?style=flat-square&logo=microsoftazure&logoColor=white)
 
 </td>
 <td valign="top" width="25%">
@@ -216,18 +216,18 @@ Full-stack quantitative research and analytics platform built on Next.js with Ty
 <td colspan="2" valign="top">
 
 **Databases** &nbsp;
-![Postgres](https://img.shields.io/badge/PostgreSQL-316192?style=flat-square&logo=postgresql&logoColor=white)
+![Postgres](https://img.shields.io/badge/PostgreSQL-4169E1?style=flat-square&logo=postgresql&logoColor=white)
 ![MySQL](https://img.shields.io/badge/MySQL-4479A1?style=flat-square&logo=mysql&logoColor=white)
-![MongoDB](https://img.shields.io/badge/MongoDB-4ea94b?style=flat-square&logo=mongodb&logoColor=white)
+![MongoDB](https://img.shields.io/badge/MongoDB-47A248?style=flat-square&logo=mongodb&logoColor=white)
 
 </td>
 <td colspan="2" valign="top">
 
 **Tools** &nbsp;
-![Git](https://img.shields.io/badge/Git-F05033?style=flat-square&logo=git&logoColor=white)
+![Git](https://img.shields.io/badge/Git-F05032?style=flat-square&logo=git&logoColor=white)
 ![GitHub Actions](https://img.shields.io/badge/Actions-2088FF?style=flat-square&logo=github-actions&logoColor=white)
-![VS Code](https://img.shields.io/badge/VS_Code-0078d7?style=flat-square&logo=visual-studio-code&logoColor=white)
-![Vercel](https://img.shields.io/badge/Vercel-000?style=flat-square&logo=vercel&logoColor=white)
+![VS Code](https://img.shields.io/badge/VS_Code-007ACC?style=flat-square&logo=visual-studio-code&logoColor=white)
+![Vercel](https://img.shields.io/badge/Vercel-000000?style=flat-square&logo=vercel&logoColor=white)
 
 </td>
 </tr>
@@ -236,14 +236,14 @@ Full-stack quantitative research and analytics platform built on Next.js with Ty
 <img src="./assets/divider.svg" width="100%" alt=""/>
 
 <!-- ═══════════════════════════════════════════════════════════ -->
-<!-- GITHUB ANALYTICS -->
+<!-- GITHUB ANALYTICS & ACTIVITY -->
 <!-- ═══════════════════════════════════════════════════════════ -->
 
 ## 📊 &nbsp;GitHub Analytics
 
 <div align="center">
 
-<img src="https://github-readme-activity-graph.vercel.app/graph?username=ParthK0&bg_color=00000000&color=a0a0c0&line=8b5cf6&point=f75c7e&area=true&area_color=8b5cf630&hide_border=true&custom_title=Contribution%20Timeline" width="95%" alt="Contribution Graph"/>
+<img src="https://github-readme-activity-graph.vercel.app/graph?username=ParthK0&bg_color=ffffff&color=475569&line=2563eb&point=6366f1&area=true&area_color=6366f120&hide_border=false&border_color=e2e8f0&custom_title=Contribution%20Timeline" width="95%" alt="Contribution Graph"/>
 
 </div>
 
@@ -251,7 +251,7 @@ Full-stack quantitative research and analytics platform built on Next.js with Ty
 
 <div align="center">
 
-<img width="38%" src="https://github-readme-stats.vercel.app/api/top-langs/?username=ParthK0&theme=transparent&hide_border=true&layout=compact&title_color=8b5cf6&text_color=a0a0c0&bg_color=00000000" alt="Top Languages"/>
+<img width="42%" src="https://github-readme-stats.vercel.app/api/top-langs/?username=ParthK0&theme=default&border_radius=12&hide_border=false&border_color=e2e8f0&layout=compact&title_color=1e293b&text_color=475569&bg_color=ffffff" alt="Top Languages"/>
 
 </div>
 
@@ -259,7 +259,7 @@ Full-stack quantitative research and analytics platform built on Next.js with Ty
 
 <div align="center">
 
-<img src="https://github-profile-trophies.vercel.app/?username=ParthK0&theme=discord&no-frame=true&no-bg=true&margin-w=6&column=7" alt="Trophies"/>
+<img src="https://github-profile-trophies.vercel.app/?username=ParthK0&theme=flat&no-frame=true&no-bg=true&margin-w=6&column=7" alt="Trophies"/>
 
 </div>
 
@@ -288,11 +288,11 @@ Full-stack quantitative research and analytics platform built on Next.js with Ty
 <!-- ═══════════════════════════════════════════════════════════ -->
 
 <div align="center">
-  <img src="./assets/footer.svg" width="100%" alt="Footer"/>
+  <img src="./assets/footer.svg" width="100%" alt="Let's build something intelligent together."/>
 </div>
 
 <div align="center">
 
-<img src="https://komarev.com/ghpvc/?username=ParthK0&label=Profile%20Views&color=8b5cf6&style=flat-square" alt="Profile Views"/>
+<img src="https://komarev.com/ghpvc/?username=ParthK0&label=Profile%20Views&color=2563eb&style=flat-square" alt="Profile Views"/>
 
 </div>

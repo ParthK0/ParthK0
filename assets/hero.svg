@@ -1,290 +1,304 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="900" height="400" viewBox="0 0 900 400">
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="640" viewBox="0 0 1000 640">
   <defs>
-    <!-- Gradient definitions using design tokens -->
-    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" style="stop-color:#0d0d1a"/>
-      <stop offset="50%" style="stop-color:#12122a"/>
-      <stop offset="100%" style="stop-color:#0d0d1a"/>
-    </linearGradient>
-    
-    <linearGradient id="accentGrad" x1="0%" y1="0%" x2="100%" y2="0%">
-      <stop offset="0%" style="stop-color:#f75c7e"/>
-      <stop offset="50%" style="stop-color:#8b5cf6"/>
-      <stop offset="100%" style="stop-color:#06b6d4"/>
-    </linearGradient>
-    
-    <linearGradient id="glowGrad" x1="0%" y1="0%" x2="100%" y2="0%">
-      <stop offset="0%" style="stop-color:#f75c7e;stop-opacity:0.4"/>
-      <stop offset="100%" style="stop-color:#8b5cf6;stop-opacity:0.4"/>
-    </linearGradient>
-
-    <linearGradient id="shimmer" x1="-100%" y1="0%" x2="200%" y2="0%">
-      <stop offset="0%" style="stop-color:transparent"/>
-      <stop offset="40%" style="stop-color:transparent"/>
-      <stop offset="50%" style="stop-color:rgba(255,255,255,0.15)"/>
-      <stop offset="60%" style="stop-color:transparent"/>
-      <stop offset="100%" style="stop-color:transparent"/>
-      <animate attributeName="x1" values="-100%;200%" dur="4s" repeatCount="indefinite"/>
-      <animate attributeName="x2" values="0%;300%" dur="4s" repeatCount="indefinite"/>
-    </linearGradient>
-
-    <!-- Glow filter -->
-    <filter id="glow" x="-50%" y="-50%" width="200%" height="200%">
-      <feGaussianBlur stdDeviation="6" result="blur"/>
-      <feMerge>
-        <feMergeNode in="blur"/>
-        <feMergeNode in="SourceGraphic"/>
-      </feMerge>
-    </filter>
-    
-    <filter id="softGlow" x="-50%" y="-50%" width="200%" height="200%">
-      <feGaussianBlur stdDeviation="12" result="blur"/>
-      <feMerge>
-        <feMergeNode in="blur"/>
-        <feMergeNode in="SourceGraphic"/>
-      </feMerge>
-    </filter>
-
-    <!-- Floating particle filter -->
-    <filter id="particleGlow" x="-100%" y="-100%" width="300%" height="300%">
-      <feGaussianBlur stdDeviation="3"/>
-    </filter>
-
+    <!-- Font Imports -->
     <style>
-      @import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&amp;family=JetBrains+Mono:wght@400;500&amp;display=swap');
-      
-      .hero-name {
-        font-family: 'Space Grotesk', sans-serif;
+      @import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&amp;family=Space+Grotesk:wght@500;700&amp;display=swap');
+
+      .title-parth {
+        font-family: 'Plus Jakarta Sans', 'Space Grotesk', -apple-system, sans-serif;
+        font-weight: 800;
+        font-size: 76px;
+        fill: #0F172A;
+        letter-spacing: -1px;
+      }
+
+      .title-khowal {
+        font-family: 'Plus Jakarta Sans', 'Space Grotesk', -apple-system, sans-serif;
+        font-weight: 800;
+        font-size: 76px;
+        fill: url(#khowalGradient);
+        letter-spacing: -1px;
+      }
+
+      .subtitle {
+        font-family: 'Plus Jakarta Sans', sans-serif;
+        font-weight: 500;
+        font-size: 22px;
+        fill: #334155;
+      }
+
+      .card-title {
+        font-family: 'Plus Jakarta Sans', sans-serif;
         font-weight: 700;
-        font-size: 52px;
-        fill: url(#accentGrad);
-        opacity: 0;
-        animation: fadeSlideUp 1s ease-out 0.5s forwards;
-      }
-      
-      .hero-tagline {
-        font-family: 'Space Grotesk', sans-serif;
-        font-weight: 500;
-        font-size: 20px;
-        fill: #a0a0c0;
-        opacity: 0;
-        animation: fadeSlideUp 0.8s ease-out 1.2s forwards;
+        font-size: 13px;
+        fill: #1E293B;
+        letter-spacing: 0.8px;
       }
 
-      .hero-role {
-        font-family: 'JetBrains Mono', monospace;
-        font-weight: 500;
+      .contact-text {
+        font-family: 'Plus Jakarta Sans', sans-serif;
+        font-weight: 600;
         font-size: 14px;
-        fill: #06b6d4;
-        opacity: 0;
-        animation: fadeSlideUp 0.8s ease-out 1.6s forwards;
+        fill: #334155;
       }
 
-      .status-dot {
-        fill: #22c55e;
-        opacity: 0;
-        animation: fadeIn 0.5s ease-out 2s forwards, pulse 2s ease-in-out 2s infinite;
+      /* Hover & Animation effects inside SVG */
+      .floating-card {
+        transition: transform 0.3s ease;
+        animation: cardFloat 6s ease-in-out infinite alternate;
       }
 
-      .status-text {
-        font-family: 'JetBrains Mono', monospace;
-        font-weight: 400;
-        font-size: 12px;
-        fill: #22c55e;
-        opacity: 0;
-        animation: fadeIn 0.5s ease-out 2s forwards;
+      .card-1 { animation-delay: 0s; }
+      .card-2 { animation-delay: 0.8s; }
+      .card-3 { animation-delay: 1.6s; }
+      .card-4 { animation-delay: 2.4s; }
+      .card-5 { animation-delay: 3.2s; }
+
+      @keyframes cardFloat {
+        0% { transform: translateY(0px); }
+        100% { transform: translateY(-6px); }
       }
 
-      /* Terminal-style module labels */
-      .module-label {
-        font-family: 'JetBrains Mono', monospace;
-        font-weight: 400;
-        font-size: 11px;
-        opacity: 0;
-      }
-      .mod-1 { fill: #f75c7e; animation: fadeSlideRight 0.4s ease-out 2.2s forwards; }
-      .mod-2 { fill: #8b5cf6; animation: fadeSlideRight 0.4s ease-out 2.4s forwards; }
-      .mod-3 { fill: #06b6d4; animation: fadeSlideRight 0.4s ease-out 2.6s forwards; }
-      .mod-4 { fill: #f59e0b; animation: fadeSlideRight 0.4s ease-out 2.8s forwards; }
-
-      /* Decorative elements */
-      .accent-line {
-        stroke: url(#accentGrad);
-        stroke-width: 2;
-        stroke-linecap: round;
-        opacity: 0;
-        animation: expandLine 1s ease-out 1s forwards;
+      .wave-pulse {
+        animation: waveGlow 8s ease-in-out infinite alternate;
       }
 
-      .corner-bracket {
-        stroke: #2a2a4a;
-        stroke-width: 1.5;
-        fill: none;
-        opacity: 0;
-        animation: fadeIn 0.6s ease-out 0.2s forwards;
+      @keyframes waveGlow {
+        0% { opacity: 0.8; }
+        100% { opacity: 1; }
       }
 
-      /* Floating orbs */
-      .orb {
-        opacity: 0;
-        animation: fadeIn 1s ease-out 3s forwards;
-      }
-      .orb-pink { fill: #f75c7e; }
-      .orb-violet { fill: #8b5cf6; }
-      .orb-cyan { fill: #06b6d4; }
-
-      .float-1 { animation: fadeIn 1s ease-out 3s forwards, float1 8s ease-in-out 3s infinite; }
-      .float-2 { animation: fadeIn 1s ease-out 3.2s forwards, float2 10s ease-in-out 3.2s infinite; }
-      .float-3 { animation: fadeIn 1s ease-out 3.4s forwards, float3 7s ease-in-out 3.4s infinite; }
-      .float-4 { animation: fadeIn 1s ease-out 3.6s forwards, float4 9s ease-in-out 3.6s infinite; }
-
-      /* Border card */
-      .card-border {
-        fill: none;
-        stroke: #1a1a3a;
-        stroke-width: 1;
-        rx: 20;
-        opacity: 0;
-        animation: fadeIn 0.8s ease-out 0.1s forwards;
+      .sparkle {
+        animation: twinkle 3s ease-in-out infinite alternate;
       }
 
-      .card-border-glow {
-        fill: none;
-        stroke: url(#accentGrad);
-        stroke-width: 1;
-        rx: 20;
-        opacity: 0;
-        animation: fadeIn 1.2s ease-out 0.3s forwards;
-        stroke-dasharray: 8 4;
-        stroke-dashoffset: 0;
-        animation: fadeIn 1.2s ease-out 0.3s forwards, dashMove 20s linear 0.3s infinite;
-      }
-
-      .grid-dot {
-        fill: #1a1a3a;
-        opacity: 0;
-        animation: fadeIn 2s ease-out 0s forwards;
-      }
-
-      /* Keyframes */
-      @keyframes fadeSlideUp {
-        from { opacity: 0; transform: translateY(20px); }
-        to { opacity: 1; transform: translateY(0); }
-      }
-      @keyframes fadeSlideRight {
-        from { opacity: 0; transform: translateX(-10px); }
-        to { opacity: 1; transform: translateX(0); }
-      }
-      @keyframes fadeIn {
-        from { opacity: 0; }
-        to { opacity: 1; }
-      }
-      @keyframes expandLine {
-        from { opacity: 0; stroke-dashoffset: 300; }
-        to { opacity: 0.8; stroke-dashoffset: 0; }
-      }
-      @keyframes pulse {
-        0%, 100% { opacity: 1; r: 4; }
-        50% { opacity: 0.6; r: 6; }
-      }
-      @keyframes float1 {
-        0%, 100% { transform: translate(0, 0); }
-        25% { transform: translate(8px, -12px); }
-        50% { transform: translate(-4px, -20px); }
-        75% { transform: translate(12px, -8px); }
-      }
-      @keyframes float2 {
-        0%, 100% { transform: translate(0, 0); }
-        33% { transform: translate(-10px, 8px); }
-        66% { transform: translate(6px, -14px); }
-      }
-      @keyframes float3 {
-        0%, 100% { transform: translate(0, 0); }
-        50% { transform: translate(15px, 10px); }
-      }
-      @keyframes float4 {
-        0%, 100% { transform: translate(0, 0); }
-        25% { transform: translate(-8px, -6px); }
-        75% { transform: translate(10px, 8px); }
-      }
-      @keyframes dashMove {
-        from { stroke-dashoffset: 0; }
-        to { stroke-dashoffset: -120; }
+      @keyframes twinkle {
+        0% { opacity: 0.3; transform: scale(0.8); }
+        100% { opacity: 1; transform: scale(1.1); }
       }
     </style>
+
+    <!-- Gradients -->
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#F8FAFC"/>
+      <stop offset="50%" style="stop-color:#F1F5F9"/>
+      <stop offset="100%" style="stop-color:#E2E8F0"/>
+    </linearGradient>
+
+    <linearGradient id="khowalGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#3B82F6"/>
+      <stop offset="45%" style="stop-color:#6366F1"/>
+      <stop offset="80%" style="stop-color:#8B5CF6"/>
+      <stop offset="100%" style="stop-color:#06B6D4"/>
+    </linearGradient>
+
+    <linearGradient id="waveGrad1" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#2563EB;stop-opacity:0.95"/>
+      <stop offset="35%" style="stop-color:#4F46E5;stop-opacity:0.9"/>
+      <stop offset="70%" style="stop-color:#7C3AED;stop-opacity:0.85"/>
+      <stop offset="100%" style="stop-color:#06B6D4;stop-opacity:0.9"/>
+    </linearGradient>
+
+    <linearGradient id="waveGrad2" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#3B82F6;stop-opacity:0.4"/>
+      <stop offset="50%" style="stop-color:#8B5CF6;stop-opacity:0.35"/>
+      <stop offset="100%" style="stop-color:#22D3EE;stop-opacity:0.45"/>
+    </linearGradient>
+
+    <!-- Card Shadow Filter -->
+    <filter id="cardShadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="10" stdDeviation="12" flood-color="#64748B" flood-opacity="0.12"/>
+      <feDropShadow dx="0" dy="2" stdDeviation="4" flood-color="#0F172A" flood-opacity="0.06"/>
+    </filter>
+
+    <filter id="pillShadow" x="-10%" y="-20%" width="120%" height="150%">
+      <feDropShadow dx="0" dy="8" stdDeviation="10" flood-color="#475569" flood-opacity="0.10"/>
+    </filter>
+
+    <!-- Dots Pattern -->
+    <pattern id="dotGrid" x="0" y="0" width="16" height="16" patternUnits="userSpaceOnUse">
+      <circle cx="3" cy="3" r="1.5" fill="#94A3B8" opacity="0.4"/>
+    </pattern>
   </defs>
 
-  <!-- Background -->
-  <rect width="900" height="400" fill="url(#bgGrad)" rx="0"/>
+  <!-- Canvas Background -->
+  <rect width="1000" height="640" fill="#F8FAFC" rx="16"/>
   
-  <!-- Subtle grid dots pattern -->
-  <g>
-    <circle cx="60" cy="60" r="1" class="grid-dot"/>
-    <circle cx="120" cy="60" r="1" class="grid-dot"/>
-    <circle cx="180" cy="60" r="1" class="grid-dot"/>
-    <circle cx="240" cy="60" r="1" class="grid-dot"/>
-    <circle cx="300" cy="60" r="1" class="grid-dot"/>
-    <circle cx="60" cy="120" r="1" class="grid-dot"/>
-    <circle cx="120" cy="120" r="1" class="grid-dot"/>
-    <circle cx="180" cy="120" r="1" class="grid-dot"/>
-    <circle cx="240" cy="120" r="1" class="grid-dot"/>
-    <circle cx="300" cy="120" r="1" class="grid-dot"/>
-    <circle cx="600" cy="340" r="1" class="grid-dot"/>
-    <circle cx="660" cy="340" r="1" class="grid-dot"/>
-    <circle cx="720" cy="340" r="1" class="grid-dot"/>
-    <circle cx="780" cy="340" r="1" class="grid-dot"/>
-    <circle cx="840" cy="340" r="1" class="grid-dot"/>
-    <circle cx="600" cy="280" r="1" class="grid-dot"/>
-    <circle cx="660" cy="280" r="1" class="grid-dot"/>
-    <circle cx="720" cy="280" r="1" class="grid-dot"/>
-    <circle cx="780" cy="280" r="1" class="grid-dot"/>
-    <circle cx="840" cy="280" r="1" class="grid-dot"/>
+  <!-- Subtle Background Grid Patterns -->
+  <rect x="24" y="24" width="120" height="96" fill="url(#dotGrid)" opacity="0.7"/>
+  <rect x="886" y="260" width="90" height="112" fill="url(#dotGrid)" opacity="0.7"/>
+
+  <!-- Top Right & Top Left Background Decorative Concentric Circles -->
+  <g opacity="0.35">
+    <circle cx="940" cy="60" r="120" stroke="#3B82F6" stroke-width="1" fill="none"/>
+    <circle cx="940" cy="60" r="80" stroke="#8B5CF6" stroke-width="1" fill="none"/>
+    <circle cx="940" cy="60" r="40" stroke="#06B6D4" stroke-width="1" fill="none"/>
+    <circle cx="965" cy="110" r="5" fill="#06B6D4"/>
+    
+    <circle cx="60" cy="220" r="140" stroke="#CBD5E1" stroke-width="1" fill="none"/>
+    <circle cx="60" cy="220" r="90" stroke="#E2E8F0" stroke-width="1" fill="none"/>
+    <circle cx="125" cy="245" r="4" fill="#3B82F6"/>
   </g>
 
-  <!-- Outer border with gradient dash -->
-  <rect x="12" y="12" width="876" height="376" class="card-border"/>
-  <rect x="12" y="12" width="876" height="376" class="card-border-glow" style="opacity:0.15"/>
-
-  <!-- Corner brackets -->
-  <polyline points="20,45 20,20 45,20" class="corner-bracket"/>
-  <polyline points="855,20 880,20 880,45" class="corner-bracket"/>
-  <polyline points="20,355 20,380 45,380" class="corner-bracket"/>
-  <polyline points="855,380 880,380 880,355" class="corner-bracket"/>
-
-  <!-- Accent gradient line under name -->
-  <line x1="60" y1="225" x2="360" y2="225" class="accent-line" stroke-dasharray="300" stroke-dashoffset="300"/>
-
-  <!-- Main text content -->
-  <text x="60" y="210" class="hero-name">Parth Khowal</text>
-  
-  <text x="60" y="258" class="hero-tagline">Building intelligent systems that solve real problems</text>
-
-  <text x="60" y="290" class="hero-role">AI &amp; Data Science · Full-Stack Engineer · Open Source</text>
-
-  <!-- Online status indicator -->
-  <g>
-    <circle cx="60" cy="325" r="4" class="status-dot" filter="url(#glow)"/>
-    <text x="72" y="329" class="status-text">available for opportunities</text>
+  <!-- Top Center Code Symbol & Lines -->
+  <g transform="translate(500, 72)" text-anchor="middle">
+    <line x1="-120" y1="0" x2="-40" y2="0" stroke="#CBD5E1" stroke-width="1.5" stroke-linecap="round"/>
+    <text x="0" y="6" font-family="'Plus Jakarta Sans', sans-serif" font-weight="700" font-size="20" fill="#3B82F6" text-anchor="middle">&lt;/&gt;</text>
+    <line x1="40" y1="0" x2="120" y2="0" stroke="#CBD5E1" stroke-width="1.5" stroke-linecap="round"/>
   </g>
 
-  <!-- Right side: Module loading labels (cinematic touch) -->
-  <g transform="translate(580, 100)">
-    <text x="0" y="0" class="module-label mod-1">▸ computer_vision</text>
-    <text x="0" y="28" class="module-label mod-2">▸ machine_learning</text>
-    <text x="0" y="56" class="module-label mod-3">▸ full_stack_web</text>
-    <text x="0" y="84" class="module-label mod-4">▸ systems_design</text>
+  <!-- Main Title: PARTH KHOWAL -->
+  <g transform="translate(500, 165)" text-anchor="middle">
+    <text x="0" y="0">
+      <tspan class="title-parth">PARTH </tspan>
+      <tspan class="title-khowal">KHOWAL</tspan>
+    </text>
   </g>
 
-  <!-- Floating orbs (playful element) -->
-  <g filter="url(#particleGlow)">
-    <circle cx="700" cy="220" r="4" class="orb orb-pink float-1"/>
-    <circle cx="750" cy="280" r="3" class="orb orb-violet float-2"/>
-    <circle cx="800" cy="200" r="5" class="orb orb-cyan float-3"/>
-    <circle cx="650" cy="300" r="3" class="orb orb-pink float-4"/>
-    <circle cx="820" cy="260" r="2" class="orb orb-violet float-1"/>
-    <circle cx="680" cy="250" r="4" class="orb orb-cyan float-2"/>
+  <!-- Subtitle -->
+  <g transform="translate(500, 212)" text-anchor="middle">
+    <text x="0" y="0" class="subtitle">
+      Building intelligent solutions with <tspan font-weight="700" fill="#6366F1">AI</tspan>, <tspan font-weight="700" fill="#2563EB">data</tspan> and <tspan font-weight="700" fill="#0D9488">code</tspan>.
+    </text>
   </g>
 
-  <!-- Shimmer overlay across card -->
-  <rect x="12" y="12" width="876" height="376" fill="url(#shimmer)" rx="20" style="mix-blend-mode: overlay; pointer-events: none;"/>
+  <!-- Small Accent Dot under Subtitle -->
+  <circle cx="500" cy="236" r="3.5" fill="#3B82F6"/>
+  <line x1="450" y1="236" x2="488" y2="236" stroke="#E2E8F0" stroke-width="1.5"/>
+  <line x1="512" y1="236" x2="550" y2="236" stroke="#E2E8F0" stroke-width="1.5"/>
+
+  <!-- 5 Action / Value Cards Row -->
+  <g transform="translate(60, 270)">
+    
+    <!-- Card 1: DEVELOP -->
+    <g class="floating-card card-1" transform="translate(0, 0)">
+      <rect width="160" height="120" rx="18" fill="#FFFFFF" filter="url(#cardShadow)"/>
+      <!-- Icon: Code -->
+      <g transform="translate(80, 42)">
+        <circle cx="0" cy="0" r="22" fill="#EFF6FF"/>
+        <path d="M-7 -4 L-12 0 L-7 4 M7 -4 L12 0 L7 4 M-2 6 L2 -6" stroke="#2563EB" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+      </g>
+      <text x="80" y="88" text-anchor="middle" class="card-title">DEVELOP</text>
+      <!-- Accent bar -->
+      <rect x="68" y="96" width="24" height="3" rx="1.5" fill="#2563EB"/>
+    </g>
+
+    <!-- Card 2: LEARN -->
+    <g class="floating-card card-2" transform="translate(180, 0)">
+      <rect width="160" height="120" rx="18" fill="#FFFFFF" filter="url(#cardShadow)"/>
+      <!-- Icon: Book -->
+      <g transform="translate(80, 42)">
+        <circle cx="0" cy="0" r="22" fill="#EEF2FF"/>
+        <path d="M-10 -6 C-6 -8 0 -6 0 -6 C0 -6 6 -8 10 -6 L10 7 C6 5 0 7 0 7 C0 7 -6 5 -10 7 Z M0 -6 L0 7" stroke="#4F46E5" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+      </g>
+      <text x="80" y="88" text-anchor="middle" class="card-title">LEARN</text>
+      <!-- Accent bar -->
+      <rect x="68" y="96" width="24" height="3" rx="1.5" fill="#4F46E5"/>
+    </g>
+
+    <!-- Card 3: ANALYZE -->
+    <g class="floating-card card-3" transform="translate(360, 0)">
+      <rect width="160" height="120" rx="18" fill="#FFFFFF" filter="url(#cardShadow)"/>
+      <!-- Icon: Chart -->
+      <g transform="translate(80, 42)">
+        <circle cx="0" cy="0" r="22" fill="#F0F9FF"/>
+        <path d="M-10 8 L-10 3 M-4 8 L-4 -4 M2 8 L2 0 M8 8 L8 -8 M-10 1 L-4 -5 L2 -1 L9 -9" stroke="#0284C7" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+        <circle cx="9" cy="-9" r="2" fill="#0284C7"/>
+      </g>
+      <text x="80" y="88" text-anchor="middle" class="card-title">ANALYZE</text>
+      <!-- Accent bar -->
+      <rect x="68" y="96" width="24" height="3" rx="1.5" fill="#0284C7"/>
+    </g>
+
+    <!-- Card 4: INNOVATE -->
+    <g class="floating-card card-4" transform="translate(540, 0)">
+      <rect width="160" height="120" rx="18" fill="#FFFFFF" filter="url(#cardShadow)"/>
+      <!-- Icon: Lightbulb -->
+      <g transform="translate(80, 42)">
+        <circle cx="0" cy="0" r="22" fill="#F5F3FF"/>
+        <path d="M-7 -3 C-7 -7 -4 -10 0 -10 C4 -10 7 -7 7 -3 C7 0 4 2 3 5 L-3 5 C-4 2 -7 0 -7 -3 Z M-3 8 L3 8" stroke="#7C3AED" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+        <line x1="0" y1="-14" x2="0" y2="-12" stroke="#7C3AED" stroke-width="2" stroke-linecap="round"/>
+        <line x1="-11" y1="-3" x2="-9" y2="-3" stroke="#7C3AED" stroke-width="2" stroke-linecap="round"/>
+        <line x1="9" y1="-3" x2="11" y2="-3" stroke="#7C3AED" stroke-width="2" stroke-linecap="round"/>
+      </g>
+      <text x="80" y="88" text-anchor="middle" class="card-title">INNOVATE</text>
+      <!-- Accent bar -->
+      <rect x="68" y="96" width="24" height="3" rx="1.5" fill="#7C3AED"/>
+    </g>
+
+    <!-- Card 5: CREATE IMPACT -->
+    <g class="floating-card card-5" transform="translate(720, 0)">
+      <rect width="160" height="120" rx="18" fill="#FFFFFF" filter="url(#cardShadow)"/>
+      <!-- Icon: Rocket -->
+      <g transform="translate(80, 42)">
+        <circle cx="0" cy="0" r="22" fill="#ECFEFF"/>
+        <path d="M-2 9 C-2 9 -8 6 -9 2 C-9 -2 -4 -8 4 -10 C6 -2 2 8 -2 9 Z M-6 4 C-4 8 2 9 2 9 M-5 -3 C-3 -3 -3 -5 -5 -3" stroke="#06B6D4" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+        <circle cx="0" cy="-4" r="2" stroke="#06B6D4" stroke-width="2" fill="none"/>
+      </g>
+      <text x="80" y="88" text-anchor="middle" class="card-title">CREATE IMPACT</text>
+      <!-- Accent bar -->
+      <rect x="68" y="96" width="24" height="3" rx="1.5" fill="#06B6D4"/>
+    </g>
+
+  </g>
+
+  <!-- Contact Pill Bar Container -->
+  <g transform="translate(500, 450)">
+    <rect x="-240" y="-24" width="480" height="48" rx="24" fill="#FFFFFF" filter="url(#pillShadow)"/>
+    
+    <!-- Item 1: LinkedIn -->
+    <g transform="translate(-160, 0)">
+      <!-- LinkedIn Icon -->
+      <rect x="-42" y="-11" width="22" height="22" rx="4" fill="#0A66C2"/>
+      <text x="-34" y="4" font-family="sans-serif" font-weight="bold" font-size="14" fill="#FFFFFF">in</text>
+      <text x="-12" y="5" class="contact-text">/parth-khowal</text>
+    </g>
+
+    <!-- Divider 1 -->
+    <line x1="-50" y1="-12" x2="-50" y2="12" stroke="#E2E8F0" stroke-width="1.5"/>
+
+    <!-- Item 2: Email -->
+    <g transform="translate(-30, 0)">
+      <!-- Mail Icon -->
+      <rect x="-5" y="-10" width="20" height="15" rx="3" fill="none" stroke="#6366F1" stroke-width="2"/>
+      <path d="M-5 -7 L5 0 L15 -7" stroke="#6366F1" stroke-width="2" stroke-linecap="round" fill="none"/>
+      <text x="24" y="5" class="contact-text">parthkhowal222@gmail.com</text>
+    </g>
+
+    <!-- Divider 2 -->
+    <line x1="130" y1="-12" x2="130" y2="12" stroke="#E2E8F0" stroke-width="1.5"/>
+
+    <!-- Item 3: GitHub -->
+    <g transform="translate(175, 0)">
+      <path d="M-15 0 C-15 -6.6 -9.6 -12 -3 -12 C-1.3 -12 0.3 -11.6 1.7 -10.9 C1 -10 1 -9 1 -9 C-0.5 -9 -1.5 -8 -2 -7 C-2.5 -6 -2.3 -4.5 -1.5 -3.5 C-1.5 -2 -2 -0.5 -1.5 1 C-1.5 1 0 1 2 -0.5 C3 -0.2 4.1 0 5.1 0" stroke="#0F172A" stroke-width="2" fill="none" transform="scale(0.8) translate(-10, 0)"/>
+      <circle cx="-12" cy="0" r="10" fill="#0F172A"/>
+      <path d="M-16 2 C-16 -1 -14 -4 -12 -4 C-10 -4 -8 -1 -8 2 C-8 4 -9 6 -12 6 C-15 6 -16 4 -16 2 Z M-14 -1 C-14 -1 -13 -2 -12 -2 C-11 -2 -10 -1 -10 -1" fill="#FFFFFF"/>
+      <text x="4" y="5" class="contact-text">/ParthK0</text>
+    </g>
+  </g>
+
+  <!-- Bottom Fluid Wave Background -->
+  <g class="wave-pulse" transform="translate(0, 480)">
+    <!-- Background mesh / network lines -->
+    <g stroke="#93C5FD" stroke-width="0.75" opacity="0.3" fill="none">
+      <path d="M0 60 Q 250 20 500 70 T 1000 40"/>
+      <path d="M0 80 Q 300 40 600 90 T 1000 60"/>
+      <path d="M0 100 Q 200 70 500 110 T 1000 80"/>
+      <!-- Network Nodes -->
+      <circle cx="120" cy="65" r="3" fill="#3B82F6"/>
+      <circle cx="280" cy="45" r="2.5" fill="#6366F1"/>
+      <circle cx="450" cy="85" r="3.5" fill="#8B5CF6"/>
+      <circle cx="720" cy="55" r="3" fill="#06B6D4"/>
+      <line x1="120" y1="65" x2="280" y2="45"/>
+      <line x1="280" y1="45" x2="450" y2="85"/>
+      <line x1="450" y1="85" x2="720" y2="55"/>
+    </g>
+
+    <!-- Secondary Wave -->
+    <path d="M0,70 C180,30 350,110 550,60 C750,10 880,80 1000,40 L1000,160 L0,160 Z" fill="url(#waveGrad2)"/>
+    
+    <!-- Primary Foreground Wave -->
+    <path d="M0,90 C200,40 380,120 620,70 C800,30 920,85 1000,65 L1000,160 L0,160 Z" fill="url(#waveGrad1)"/>
+  </g>
+
 </svg>

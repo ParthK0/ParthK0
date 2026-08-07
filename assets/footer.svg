@@ -1,97 +1,214 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="900" height="160" viewBox="0 0 900 160">
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="480" viewBox="0 0 1000 480">
   <defs>
-    <linearGradient id="ftGrad" x1="0%" y1="0%" x2="100%" y2="0%">
-      <stop offset="0%" style="stop-color:#f75c7e"/>
-      <stop offset="50%" style="stop-color:#8b5cf6"/>
-      <stop offset="100%" style="stop-color:#06b6d4"/>
-    </linearGradient>
-    <linearGradient id="ftBg" x1="0%" y1="0%" x2="0%" y2="100%">
-      <stop offset="0%" style="stop-color:#0d0d1a;stop-opacity:0"/>
-      <stop offset="40%" style="stop-color:#0d0d1a"/>
-      <stop offset="100%" style="stop-color:#0d0d1a"/>
-    </linearGradient>
-    <filter id="ftGlow" x="-50%" y="-50%" width="200%" height="200%">
-      <feGaussianBlur stdDeviation="4"/>
-    </filter>
+    <!-- Font Imports & CSS -->
     <style>
-      @import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600&amp;family=JetBrains+Mono:wght@400&amp;display=swap');
-      .ft-code {
-        font-family: 'JetBrains Mono', monospace;
-        font-size: 11px;
-        fill: #4a4a6a;
+      @import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&amp;display=swap');
+
+      .footer-title {
+        font-family: 'Plus Jakarta Sans', -apple-system, sans-serif;
+        font-weight: 800;
+        font-size: 38px;
+        fill: #0F172A;
+        letter-spacing: -0.5px;
       }
-      .ft-tagline {
-        font-family: 'Space Grotesk', sans-serif;
+
+      .footer-title-purple {
+        fill: url(#purpleGradient);
+      }
+
+      .footer-title-cyan {
+        fill: url(#cyanGradient);
+      }
+
+      .footer-subtitle {
+        font-family: 'Plus Jakarta Sans', sans-serif;
+        font-weight: 500;
+        font-size: 18px;
+        fill: #475569;
+      }
+
+      .pill-text {
+        font-family: 'Plus Jakarta Sans', sans-serif;
+        font-weight: 600;
+        font-size: 14px;
+        fill: #1E293B;
+      }
+
+      .bottom-thankyou {
+        font-family: 'Plus Jakarta Sans', sans-serif;
         font-weight: 500;
         font-size: 14px;
-        fill: #6a6a8a;
+        fill: #FFFFFF;
+        opacity: 0.95;
       }
-      .ft-heart {
-        fill: #f75c7e;
-        animation: heartbeat 2s ease-in-out infinite;
+
+      .sparkle-anim {
+        animation: floatSparkle 4s ease-in-out infinite alternate;
       }
-      .ft-star {
-        fill: #f59e0b;
-        opacity: 0.6;
-        animation: twinkle 3s ease-in-out infinite;
-      }
-      .ft-star-2 {
-        fill: #f59e0b;
-        opacity: 0.4;
-        animation: twinkle 3s ease-in-out 1s infinite;
-      }
-      @keyframes heartbeat {
-        0%, 100% { transform: scale(1); }
-        15% { transform: scale(1.15); }
-        30% { transform: scale(1); }
-        45% { transform: scale(1.1); }
-        60% { transform: scale(1); }
-      }
-      @keyframes twinkle {
-        0%, 100% { opacity: 0.3; }
-        50% { opacity: 0.8; }
+
+      @keyframes floatSparkle {
+        0% { transform: translateY(0px) rotate(0deg); }
+        100% { transform: translateY(-5px) rotate(8deg); }
       }
     </style>
+
+    <!-- Gradients -->
+    <linearGradient id="purpleGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#6366F1"/>
+      <stop offset="100%" style="stop-color:#8B5CF6"/>
+    </linearGradient>
+
+    <linearGradient id="cyanGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#06B6D4"/>
+      <stop offset="100%" style="stop-color:#14B8A6"/>
+    </linearGradient>
+
+    <linearGradient id="footerWaveGrad1" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#3B82F6;stop-opacity:0.95"/>
+      <stop offset="40%" style="stop-color:#6366F1;stop-opacity:0.9"/>
+      <stop offset="75%" style="stop-color:#8B5CF6;stop-opacity:0.85"/>
+      <stop offset="100%" style="stop-color:#06B6D4;stop-opacity:0.9"/>
+    </linearGradient>
+
+    <linearGradient id="footerWaveGrad2" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#60A5FA;stop-opacity:0.4"/>
+      <stop offset="50%" style="stop-color:#A78BFA;stop-opacity:0.35"/>
+      <stop offset="100%" style="stop-color:#38BDF8;stop-opacity:0.45"/>
+    </linearGradient>
+
+    <!-- Shadows -->
+    <filter id="pillShadow" x="-20%" y="-30%" width="140%" height="160%">
+      <feDropShadow dx="0" dy="8" stdDeviation="10" flood-color="#475569" flood-opacity="0.08"/>
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-color="#0F172A" flood-opacity="0.04"/>
+    </filter>
+
+    <!-- Dots Pattern -->
+    <pattern id="dotGrid" x="0" y="0" width="16" height="16" patternUnits="userSpaceOnUse">
+      <circle cx="3" cy="3" r="1.5" fill="#94A3B8" opacity="0.4"/>
+    </pattern>
   </defs>
 
-  <!-- Fade-in background -->
-  <rect width="900" height="160" fill="url(#ftBg)"/>
+  <!-- Background -->
+  <rect width="1000" height="480" fill="#F8FAFC" rx="16"/>
 
-  <!-- Top gradient line -->
-  <line x1="150" y1="20" x2="750" y2="20" stroke="url(#ftGrad)" stroke-width="1" opacity="0.3"/>
+  <!-- Left & Right Grid Patterns -->
+  <rect x="20" y="160" width="80" height="96" fill="url(#dotGrid)" opacity="0.6"/>
+  <rect x="900" y="160" width="80" height="96" fill="url(#dotGrid)" opacity="0.6"/>
 
-  <!-- Center content -->
-  <text x="450" y="70" text-anchor="middle" class="ft-tagline">
-    Crafted with
-  </text>
-  
-  <!-- Heart icon -->
-  <g transform="translate(508, 56)" class="ft-heart">
-    <path d="M7.5 0C5.5 0 3.7 1.1 2.8 2.7 3.7 1.1 5.5 0 7.5 0Z" fill="none"/>
-    <path d="M0 5.2C0 2.3 2.3 0 5 0C6.7 0 8.2 0.9 9 2.2C9.8 0.9 11.3 0 13 0C15.7 0 18 2.3 18 5.2C18 11.4 9 16 9 16S0 11.4 0 5.2Z" transform="scale(0.7)"/>
-  </g>
-  
-  <text x="450" y="70" text-anchor="middle" class="ft-tagline">
-    Crafted with      by Parth Khowal
-  </text>
-
-  <!-- Code-style bottom text -->
-  <text x="450" y="100" text-anchor="middle" class="ft-code">
-    // AI · ML · Full-Stack · Open Source
-  </text>
-
-  <!-- Star decorations -->
-  <g transform="translate(280, 62)">
-    <polygon points="4,0 5.2,3 8,3 5.8,5 6.5,8 4,6.2 1.5,8 2.2,5 0,3 2.8,3" class="ft-star" transform="scale(0.6)"/>
-  </g>
-  <g transform="translate(610, 58)">
-    <polygon points="4,0 5.2,3 8,3 5.8,5 6.5,8 4,6.2 1.5,8 2.2,5 0,3 2.8,3" class="ft-star-2" transform="scale(0.5)"/>
+  <!-- Sparkle Stars Background -->
+  <g class="sparkle-anim" fill="#8B5CF6" opacity="0.5">
+    <path d="M440 60 L442 66 L448 68 L442 70 L440 76 L438 70 L432 68 L438 66 Z" transform="scale(0.8) translate(100, 10)"/>
+    <path d="M560 50 L561 54 L565 55 L561 56 L560 60 L559 56 L555 55 L559 54 Z" transform="scale(0.8) translate(0, 10)"/>
+    <path d="M520 80 L521 83 L524 84 L521 85 L520 88 L519 85 L516 84 L519 83 Z"/>
   </g>
 
-  <!-- Bottom gradient line -->
-  <line x1="250" y1="120" x2="650" y2="120" stroke="url(#ftGrad)" stroke-width="0.5" opacity="0.2"/>
-  
-  <text x="450" y="145" text-anchor="middle" class="ft-code" style="fill:#3a3a5a;font-size:10px;">
-    ⭐ If you find my work interesting, consider giving a star ⭐
-  </text>
+  <!-- Top Rocket Icon -->
+  <g transform="translate(500, 75)">
+    <!-- Code Line Accent -->
+    <line x1="-140" y1="12" x2="-30" y2="12" stroke="#CBD5E1" stroke-width="1.5" stroke-linecap="round"/>
+    <circle cx="-140" cy="12" r="3" fill="#6366F1"/>
+    
+    <line x1="30" y1="12" x2="140" y2="12" stroke="#CBD5E1" stroke-width="1.5" stroke-linecap="round"/>
+    <circle cx="140" cy="12" r="3" fill="#06B6D4"/>
+
+    <!-- Rocket Graphic -->
+    <g transform="translate(-16, -16)">
+      <path d="M16 2 C16 2 2 10 0 22 C6 22 12 28 12 28 C12 28 22 26 30 12 C30 4 28 0 28 0 C28 0 24 2 16 2 Z" fill="none" stroke="#4F46E5" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+      <circle cx="20" cy="10" r="3" fill="#4F46E5"/>
+      <path d="M6 20 L0 32 L8 26" fill="none" stroke="#4F46E5" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+    </g>
+  </g>
+
+  <!-- Main Title: Let's build something intelligent together. -->
+  <g transform="translate(500, 160)" text-anchor="middle">
+    <text x="0" y="0" class="footer-title">
+      Let’s build something <tspan class="footer-title-purple">intelligent</tspan> <tspan class="footer-title-cyan">together.</tspan>
+    </text>
+  </g>
+
+  <!-- Subtitle: < Always learning. Always building. Always improving. > -->
+  <g transform="translate(500, 202)" text-anchor="middle">
+    <text x="0" y="0" class="footer-subtitle">
+      <tspan fill="#6366F1" font-weight="700">&lt;</tspan> &nbsp; Always learning. Always building. Always improving. &nbsp; <tspan fill="#06B6D4" font-weight="700">&gt;</tspan>
+    </text>
+  </g>
+
+  <!-- 4 Contact / Social Pill Buttons Row -->
+  <g transform="translate(500, 260)">
+
+    <!-- Button 1: LinkedIn -->
+    <g transform="translate(-320, 0)">
+      <rect width="140" height="46" rx="23" fill="#FFFFFF" filter="url(#pillShadow)"/>
+      <rect x="16" y="13" width="20" height="20" rx="4" fill="#0A66C2"/>
+      <text x="22" y="27" font-family="sans-serif" font-weight="bold" font-size="12" fill="#FFFFFF">in</text>
+      <text x="44" y="28" class="pill-text">/parth-khowal</text>
+    </g>
+
+    <!-- Connecting Line / Dot 1 -->
+    <g transform="translate(-165, 23)">
+      <line x1="0" y1="-12" x2="0" y2="12" stroke="#CBD5E1" stroke-width="1.5"/>
+      <circle cx="0" cy="0" r="3" fill="#6366F1"/>
+    </g>
+
+    <!-- Button 2: Email -->
+    <g transform="translate(-150, 0)">
+      <rect width="220" height="46" rx="23" fill="#FFFFFF" filter="url(#pillShadow)"/>
+      <!-- Email Icon -->
+      <rect x="14" y="15" width="20" height="15" rx="3" fill="none" stroke="#6366F1" stroke-width="2"/>
+      <path d="M14 18 L24 25 L34 18" stroke="#6366F1" stroke-width="2" stroke-linecap="round" fill="none"/>
+      <text x="42" y="28" class="pill-text">parthkhowal222@gmail.com</text>
+    </g>
+
+    <!-- Connecting Line / Dot 2 -->
+    <g transform="translate(85, 23)">
+      <line x1="0" y1="-12" x2="0" y2="12" stroke="#CBD5E1" stroke-width="1.5"/>
+      <circle cx="0" cy="0" r="3" fill="#8B5CF6"/>
+    </g>
+
+    <!-- Button 3: GitHub -->
+    <g transform="translate(100, 0)">
+      <rect width="126" height="46" rx="23" fill="#FFFFFF" filter="url(#pillShadow)"/>
+      <!-- GitHub Icon -->
+      <circle cx="30" cy="23" r="10" fill="#0F172A"/>
+      <path d="M26 25 C26 22 28 19 30 19 C32 19 34 22 34 25 C34 27 33 29 30 29 C27 29 26 27 26 25 Z M28 22 C28 22 29 21 30 21 C31 21 32 22 32 22" fill="#FFFFFF"/>
+      <text x="48" y="28" class="pill-text">/ParthK0</text>
+    </g>
+
+    <!-- Connecting Line / Dot 3 -->
+    <g transform="translate(241, 23)">
+      <line x1="0" y1="-12" x2="0" y2="12" stroke="#CBD5E1" stroke-width="1.5"/>
+      <circle cx="0" cy="0" r="3" fill="#06B6D4"/>
+    </g>
+
+    <!-- Button 4: Let's Connect! -->
+    <g transform="translate(255, 0)">
+      <rect width="150" height="46" rx="23" fill="#FFFFFF" filter="url(#pillShadow)"/>
+      <!-- Globe Icon -->
+      <circle cx="28" cy="23" r="9" fill="none" stroke="#0D9488" stroke-width="2"/>
+      <line x1="19" y1="23" x2="37" y2="23" stroke="#0D9488" stroke-width="1.5"/>
+      <ellipse cx="28" cy="23" rx="4" ry="9" fill="none" stroke="#0D9488" stroke-width="1.5"/>
+      <text x="44" y="28" class="pill-text">Let's Connect!</text>
+    </g>
+
+  </g>
+
+  <!-- Bottom Waves & Footer Text -->
+  <g transform="translate(0, 330)">
+    <!-- Secondary Wave -->
+    <path d="M0,50 C200,20 400,80 600,40 C800,0 900,60 1000,30 L1000,150 L0,150 Z" fill="url(#footerWaveGrad2)"/>
+
+    <!-- Primary Wave -->
+    <path d="M0,70 C180,30 380,90 620,50 C820,10 920,65 1000,45 L1000,150 L0,150 Z" fill="url(#footerWaveGrad1)"/>
+
+    <!-- Thank you text at very bottom -->
+    <g transform="translate(500, 115)" text-anchor="middle">
+      <!-- Heart Icon -->
+      <path d="M-6 -2 C-9 -5 -13 -2 -11 2 C-9 6 0 11 0 11 C0 11 9 6 11 2 C13 -2 9 -5 6 -2 C4 0 0 3 0 3 C0 3 -4 0 -6 -2 Z" fill="none" stroke="#67E8F9" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" transform="translate(-185, -12) scale(0.85)"/>
+      
+      <text x="0" y="0" class="bottom-thankyou">
+        Thanks for stopping by! Have a <tspan font-weight="700" fill="#67E8F9">great day</tspan> ahead! 🚀
+      </text>
+    </g>
+  </g>
+
 </svg>

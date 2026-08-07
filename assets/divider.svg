@@ -1,16 +1,16 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="900" height="12" viewBox="0 0 900 12">
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="16" viewBox="0 0 1000 16">
   <defs>
     <linearGradient id="divGrad" x1="0%" y1="0%" x2="100%" y2="0%">
-      <stop offset="0%" style="stop-color:#0d0d1a;stop-opacity:0"/>
-      <stop offset="15%" style="stop-color:#f75c7e;stop-opacity:0.6"/>
-      <stop offset="50%" style="stop-color:#8b5cf6;stop-opacity:0.8"/>
-      <stop offset="85%" style="stop-color:#06b6d4;stop-opacity:0.6"/>
-      <stop offset="100%" style="stop-color:#0d0d1a;stop-opacity:0"/>
+      <stop offset="0%" style="stop-color:#3B82F6;stop-opacity:0"/>
+      <stop offset="15%" style="stop-color:#3B82F6;stop-opacity:0.8"/>
+      <stop offset="50%" style="stop-color:#8B5CF6;stop-opacity:0.9"/>
+      <stop offset="85%" style="stop-color:#06B6D4;stop-opacity:0.8"/>
+      <stop offset="100%" style="stop-color:#06B6D4;stop-opacity:0"/>
     </linearGradient>
     <linearGradient id="divShimmer" x1="-100%" y1="0%" x2="0%" y2="0%">
       <stop offset="0%" style="stop-color:transparent"/>
       <stop offset="45%" style="stop-color:transparent"/>
-      <stop offset="50%" style="stop-color:rgba(255,255,255,0.5)"/>
+      <stop offset="50%" style="stop-color:rgba(255,255,255,0.8)"/>
       <stop offset="55%" style="stop-color:transparent"/>
       <stop offset="100%" style="stop-color:transparent"/>
       <animate attributeName="x1" values="-100%;200%" dur="3s" repeatCount="indefinite"/>
@@ -24,8 +24,9 @@
       </feMerge>
     </filter>
   </defs>
-  <line x1="0" y1="6" x2="900" y2="6" stroke="url(#divGrad)" stroke-width="1" filter="url(#divGlow)"/>
-  <line x1="0" y1="6" x2="900" y2="6" stroke="url(#divShimmer)" stroke-width="2" style="mix-blend-mode: overlay;"/>
+  <line x1="0" y1="8" x2="1000" y2="8" stroke="url(#divGrad)" stroke-width="1.5" filter="url(#divGlow)"/>
+  <line x1="0" y1="8" x2="1000" y2="8" stroke="url(#divShimmer)" stroke-width="2"/>
   <!-- Center diamond accent -->
-  <polygon points="450,2 454,6 450,10 446,6" fill="url(#divGrad)" filter="url(#divGlow)" opacity="0.8"/>
+  <polygon points="500,3 505,8 500,13 495,8" fill="url(#divGrad)" filter="url(#divGlow)"/>
+  <circle cx="500" cy="8" r="2" fill="#FFFFFF"/>
 </svg>
