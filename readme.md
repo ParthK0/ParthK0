@@ -288,7 +288,7 @@ Full-stack quantitative research and analytics platform built on Next.js with Ty
 <!-- ═══════════════════════════════════════════════════════════ -->
 
 <p align="center">
-  <img src="https://raw.githubusercontent.com/ParthK0/ParthK0/main/assets/footer.svg?v=3" width="100%" alt="Let's build something intelligent together." />
+  <img src="https://raw.githubusercontent.com/ParthK0/ParthK0/main/assets/footer.svg?v=4" width="100%" alt="Code. Coffee. Chaos. Repeat." />
 </p>
 
 <p align="center">
