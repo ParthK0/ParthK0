@@ -4,18 +4,6 @@
 
 <br/>
 
-<!-- ═══════════════════════════════════════════════════════════ -->
-<!-- CORE PILLARS -->
-<!-- ═══════════════════════════════════════════════════════════ -->
-
-<div align="center">
-
-| <img src="assets/card-develop.svg" width="100%" alt="DEVELOP"/> | <img src="assets/card-learn.svg" width="100%" alt="LEARN"/> | <img src="assets/card-analyze.svg" width="100%" alt="ANALYZE"/> | <img src="assets/card-innovate.svg" width="100%" alt="INNOVATE"/> | <img src="assets/card-impact.svg" width="100%" alt="CREATE IMPACT"/> |
-|:---:|:---:|:---:|:---:|:---:|
-
-</div>
-
-<br/>
 
 <!-- ═══════════════════════════════════════════════════════════ -->
 <!-- ABOUT & QUICK STATS -->
