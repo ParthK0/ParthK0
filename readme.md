@@ -1,9 +1,8 @@
 <p align="center">
-  <a href="https://www.linkedin.com/in/parth-khowal-a37903294/"><img src="assets/hero.svg" width="100%" alt="Parth Khowal — Building intelligent solutions with AI, data and code." /></a>
+  <a href="https://www.linkedin.com/in/parth-khowal-a37903294/"><img src="https://raw.githubusercontent.com/ParthK0/ParthK0/main/assets/hero.svg?v=3" width="100%" alt="Parth Khowal — Building intelligent solutions with AI, data and code." /></a>
 </p>
 
 <br/>
-
 
 <!-- ═══════════════════════════════════════════════════════════ -->
 <!-- ABOUT & QUICK STATS -->
@@ -49,7 +48,7 @@ I don't just prototype — I ship. From real-time facial recognition engines to 
 </tr>
 </table>
 
-<img src="assets/divider.svg" width="100%" alt=""/>
+<img src="https://raw.githubusercontent.com/ParthK0/ParthK0/main/assets/divider.svg?v=3" width="100%" alt=""/>
 
 <!-- ═══════════════════════════════════════════════════════════ -->
 <!-- FEATURED PROJECTS -->
@@ -159,7 +158,7 @@ Full-stack quantitative research and analytics platform built on Next.js with Ty
 
 </details>
 
-<img src="assets/divider.svg" width="100%" alt=""/>
+<img src="https://raw.githubusercontent.com/ParthK0/ParthK0/main/assets/divider.svg?v=3" width="100%" alt=""/>
 
 <!-- ═══════════════════════════════════════════════════════════ -->
 <!-- TECH STACK -->
@@ -234,7 +233,7 @@ Full-stack quantitative research and analytics platform built on Next.js with Ty
 </tr>
 </table>
 
-<img src="assets/divider.svg" width="100%" alt=""/>
+<img src="https://raw.githubusercontent.com/ParthK0/ParthK0/main/assets/divider.svg?v=3" width="100%" alt=""/>
 
 <!-- ═══════════════════════════════════════════════════════════ -->
 <!-- GITHUB ANALYTICS & ACTIVITY -->
@@ -264,7 +263,7 @@ Full-stack quantitative research and analytics platform built on Next.js with Ty
 
 </div>
 
-<img src="assets/divider.svg" width="100%" alt=""/>
+<img src="https://raw.githubusercontent.com/ParthK0/ParthK0/main/assets/divider.svg?v=3" width="100%" alt=""/>
 
 <!-- ═══════════════════════════════════════════════════════════ -->
 <!-- CONTRIBUTION SNAKE -->
@@ -289,7 +288,7 @@ Full-stack quantitative research and analytics platform built on Next.js with Ty
 <!-- ═══════════════════════════════════════════════════════════ -->
 
 <p align="center">
-  <img src="assets/footer.svg" width="100%" alt="Let's build something intelligent together." />
+  <img src="https://raw.githubusercontent.com/ParthK0/ParthK0/main/assets/footer.svg?v=3" width="100%" alt="Let's build something intelligent together." />
 </p>
 
 <p align="center">
