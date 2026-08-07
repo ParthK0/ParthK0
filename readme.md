@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="assets/hero.svg" width="100%" alt="Parth Khowal — Building intelligent solutions with AI, data and code." />
+  <a href="https://www.linkedin.com/in/parth-khowal-a37903294/"><img src="assets/hero.svg" width="100%" alt="Parth Khowal — Building intelligent solutions with AI, data and code." /></a>
 </p>
 
 <br/>
