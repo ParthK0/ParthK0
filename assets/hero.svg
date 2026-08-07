@@ -1,0 +1,290 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="400" viewBox="0 0 900 400">
+  <defs>
+    <!-- Gradient definitions using design tokens -->
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0d0d1a"/>
+      <stop offset="50%" style="stop-color:#12122a"/>
+      <stop offset="100%" style="stop-color:#0d0d1a"/>
+    </linearGradient>
+    
+    <linearGradient id="accentGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#f75c7e"/>
+      <stop offset="50%" style="stop-color:#8b5cf6"/>
+      <stop offset="100%" style="stop-color:#06b6d4"/>
+    </linearGradient>
+    
+    <linearGradient id="glowGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#f75c7e;stop-opacity:0.4"/>
+      <stop offset="100%" style="stop-color:#8b5cf6;stop-opacity:0.4"/>
+    </linearGradient>
+
+    <linearGradient id="shimmer" x1="-100%" y1="0%" x2="200%" y2="0%">
+      <stop offset="0%" style="stop-color:transparent"/>
+      <stop offset="40%" style="stop-color:transparent"/>
+      <stop offset="50%" style="stop-color:rgba(255,255,255,0.15)"/>
+      <stop offset="60%" style="stop-color:transparent"/>
+      <stop offset="100%" style="stop-color:transparent"/>
+      <animate attributeName="x1" values="-100%;200%" dur="4s" repeatCount="indefinite"/>
+      <animate attributeName="x2" values="0%;300%" dur="4s" repeatCount="indefinite"/>
+    </linearGradient>
+
+    <!-- Glow filter -->
+    <filter id="glow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="6" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+    
+    <filter id="softGlow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="12" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+
+    <!-- Floating particle filter -->
+    <filter id="particleGlow" x="-100%" y="-100%" width="300%" height="300%">
+      <feGaussianBlur stdDeviation="3"/>
+    </filter>
+
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&amp;family=JetBrains+Mono:wght@400;500&amp;display=swap');
+      
+      .hero-name {
+        font-family: 'Space Grotesk', sans-serif;
+        font-weight: 700;
+        font-size: 52px;
+        fill: url(#accentGrad);
+        opacity: 0;
+        animation: fadeSlideUp 1s ease-out 0.5s forwards;
+      }
+      
+      .hero-tagline {
+        font-family: 'Space Grotesk', sans-serif;
+        font-weight: 500;
+        font-size: 20px;
+        fill: #a0a0c0;
+        opacity: 0;
+        animation: fadeSlideUp 0.8s ease-out 1.2s forwards;
+      }
+
+      .hero-role {
+        font-family: 'JetBrains Mono', monospace;
+        font-weight: 500;
+        font-size: 14px;
+        fill: #06b6d4;
+        opacity: 0;
+        animation: fadeSlideUp 0.8s ease-out 1.6s forwards;
+      }
+
+      .status-dot {
+        fill: #22c55e;
+        opacity: 0;
+        animation: fadeIn 0.5s ease-out 2s forwards, pulse 2s ease-in-out 2s infinite;
+      }
+
+      .status-text {
+        font-family: 'JetBrains Mono', monospace;
+        font-weight: 400;
+        font-size: 12px;
+        fill: #22c55e;
+        opacity: 0;
+        animation: fadeIn 0.5s ease-out 2s forwards;
+      }
+
+      /* Terminal-style module labels */
+      .module-label {
+        font-family: 'JetBrains Mono', monospace;
+        font-weight: 400;
+        font-size: 11px;
+        opacity: 0;
+      }
+      .mod-1 { fill: #f75c7e; animation: fadeSlideRight 0.4s ease-out 2.2s forwards; }
+      .mod-2 { fill: #8b5cf6; animation: fadeSlideRight 0.4s ease-out 2.4s forwards; }
+      .mod-3 { fill: #06b6d4; animation: fadeSlideRight 0.4s ease-out 2.6s forwards; }
+      .mod-4 { fill: #f59e0b; animation: fadeSlideRight 0.4s ease-out 2.8s forwards; }
+
+      /* Decorative elements */
+      .accent-line {
+        stroke: url(#accentGrad);
+        stroke-width: 2;
+        stroke-linecap: round;
+        opacity: 0;
+        animation: expandLine 1s ease-out 1s forwards;
+      }
+
+      .corner-bracket {
+        stroke: #2a2a4a;
+        stroke-width: 1.5;
+        fill: none;
+        opacity: 0;
+        animation: fadeIn 0.6s ease-out 0.2s forwards;
+      }
+
+      /* Floating orbs */
+      .orb {
+        opacity: 0;
+        animation: fadeIn 1s ease-out 3s forwards;
+      }
+      .orb-pink { fill: #f75c7e; }
+      .orb-violet { fill: #8b5cf6; }
+      .orb-cyan { fill: #06b6d4; }
+
+      .float-1 { animation: fadeIn 1s ease-out 3s forwards, float1 8s ease-in-out 3s infinite; }
+      .float-2 { animation: fadeIn 1s ease-out 3.2s forwards, float2 10s ease-in-out 3.2s infinite; }
+      .float-3 { animation: fadeIn 1s ease-out 3.4s forwards, float3 7s ease-in-out 3.4s infinite; }
+      .float-4 { animation: fadeIn 1s ease-out 3.6s forwards, float4 9s ease-in-out 3.6s infinite; }
+
+      /* Border card */
+      .card-border {
+        fill: none;
+        stroke: #1a1a3a;
+        stroke-width: 1;
+        rx: 20;
+        opacity: 0;
+        animation: fadeIn 0.8s ease-out 0.1s forwards;
+      }
+
+      .card-border-glow {
+        fill: none;
+        stroke: url(#accentGrad);
+        stroke-width: 1;
+        rx: 20;
+        opacity: 0;
+        animation: fadeIn 1.2s ease-out 0.3s forwards;
+        stroke-dasharray: 8 4;
+        stroke-dashoffset: 0;
+        animation: fadeIn 1.2s ease-out 0.3s forwards, dashMove 20s linear 0.3s infinite;
+      }
+
+      .grid-dot {
+        fill: #1a1a3a;
+        opacity: 0;
+        animation: fadeIn 2s ease-out 0s forwards;
+      }
+
+      /* Keyframes */
+      @keyframes fadeSlideUp {
+        from { opacity: 0; transform: translateY(20px); }
+        to { opacity: 1; transform: translateY(0); }
+      }
+      @keyframes fadeSlideRight {
+        from { opacity: 0; transform: translateX(-10px); }
+        to { opacity: 1; transform: translateX(0); }
+      }
+      @keyframes fadeIn {
+        from { opacity: 0; }
+        to { opacity: 1; }
+      }
+      @keyframes expandLine {
+        from { opacity: 0; stroke-dashoffset: 300; }
+        to { opacity: 0.8; stroke-dashoffset: 0; }
+      }
+      @keyframes pulse {
+        0%, 100% { opacity: 1; r: 4; }
+        50% { opacity: 0.6; r: 6; }
+      }
+      @keyframes float1 {
+        0%, 100% { transform: translate(0, 0); }
+        25% { transform: translate(8px, -12px); }
+        50% { transform: translate(-4px, -20px); }
+        75% { transform: translate(12px, -8px); }
+      }
+      @keyframes float2 {
+        0%, 100% { transform: translate(0, 0); }
+        33% { transform: translate(-10px, 8px); }
+        66% { transform: translate(6px, -14px); }
+      }
+      @keyframes float3 {
+        0%, 100% { transform: translate(0, 0); }
+        50% { transform: translate(15px, 10px); }
+      }
+      @keyframes float4 {
+        0%, 100% { transform: translate(0, 0); }
+        25% { transform: translate(-8px, -6px); }
+        75% { transform: translate(10px, 8px); }
+      }
+      @keyframes dashMove {
+        from { stroke-dashoffset: 0; }
+        to { stroke-dashoffset: -120; }
+      }
+    </style>
+  </defs>
+
+  <!-- Background -->
+  <rect width="900" height="400" fill="url(#bgGrad)" rx="0"/>
+  
+  <!-- Subtle grid dots pattern -->
+  <g>
+    <circle cx="60" cy="60" r="1" class="grid-dot"/>
+    <circle cx="120" cy="60" r="1" class="grid-dot"/>
+    <circle cx="180" cy="60" r="1" class="grid-dot"/>
+    <circle cx="240" cy="60" r="1" class="grid-dot"/>
+    <circle cx="300" cy="60" r="1" class="grid-dot"/>
+    <circle cx="60" cy="120" r="1" class="grid-dot"/>
+    <circle cx="120" cy="120" r="1" class="grid-dot"/>
+    <circle cx="180" cy="120" r="1" class="grid-dot"/>
+    <circle cx="240" cy="120" r="1" class="grid-dot"/>
+    <circle cx="300" cy="120" r="1" class="grid-dot"/>
+    <circle cx="600" cy="340" r="1" class="grid-dot"/>
+    <circle cx="660" cy="340" r="1" class="grid-dot"/>
+    <circle cx="720" cy="340" r="1" class="grid-dot"/>
+    <circle cx="780" cy="340" r="1" class="grid-dot"/>
+    <circle cx="840" cy="340" r="1" class="grid-dot"/>
+    <circle cx="600" cy="280" r="1" class="grid-dot"/>
+    <circle cx="660" cy="280" r="1" class="grid-dot"/>
+    <circle cx="720" cy="280" r="1" class="grid-dot"/>
+    <circle cx="780" cy="280" r="1" class="grid-dot"/>
+    <circle cx="840" cy="280" r="1" class="grid-dot"/>
+  </g>
+
+  <!-- Outer border with gradient dash -->
+  <rect x="12" y="12" width="876" height="376" class="card-border"/>
+  <rect x="12" y="12" width="876" height="376" class="card-border-glow" style="opacity:0.15"/>
+
+  <!-- Corner brackets -->
+  <polyline points="20,45 20,20 45,20" class="corner-bracket"/>
+  <polyline points="855,20 880,20 880,45" class="corner-bracket"/>
+  <polyline points="20,355 20,380 45,380" class="corner-bracket"/>
+  <polyline points="855,380 880,380 880,355" class="corner-bracket"/>
+
+  <!-- Accent gradient line under name -->
+  <line x1="60" y1="225" x2="360" y2="225" class="accent-line" stroke-dasharray="300" stroke-dashoffset="300"/>
+
+  <!-- Main text content -->
+  <text x="60" y="210" class="hero-name">Parth Khowal</text>
+  
+  <text x="60" y="258" class="hero-tagline">Building intelligent systems that solve real problems</text>
+
+  <text x="60" y="290" class="hero-role">AI &amp; Data Science · Full-Stack Engineer · Open Source</text>
+
+  <!-- Online status indicator -->
+  <g>
+    <circle cx="60" cy="325" r="4" class="status-dot" filter="url(#glow)"/>
+    <text x="72" y="329" class="status-text">available for opportunities</text>
+  </g>
+
+  <!-- Right side: Module loading labels (cinematic touch) -->
+  <g transform="translate(580, 100)">
+    <text x="0" y="0" class="module-label mod-1">▸ computer_vision</text>
+    <text x="0" y="28" class="module-label mod-2">▸ machine_learning</text>
+    <text x="0" y="56" class="module-label mod-3">▸ full_stack_web</text>
+    <text x="0" y="84" class="module-label mod-4">▸ systems_design</text>
+  </g>
+
+  <!-- Floating orbs (playful element) -->
+  <g filter="url(#particleGlow)">
+    <circle cx="700" cy="220" r="4" class="orb orb-pink float-1"/>
+    <circle cx="750" cy="280" r="3" class="orb orb-violet float-2"/>
+    <circle cx="800" cy="200" r="5" class="orb orb-cyan float-3"/>
+    <circle cx="650" cy="300" r="3" class="orb orb-pink float-4"/>
+    <circle cx="820" cy="260" r="2" class="orb orb-violet float-1"/>
+    <circle cx="680" cy="250" r="4" class="orb orb-cyan float-2"/>
+  </g>
+
+  <!-- Shimmer overlay across card -->
+  <rect x="12" y="12" width="876" height="376" fill="url(#shimmer)" rx="20" style="mix-blend-mode: overlay; pointer-events: none;"/>
+</svg>
