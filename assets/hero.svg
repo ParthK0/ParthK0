@@ -1,46 +1,23 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1100" height="530" viewBox="0 0 1100 530">
+<svg xmlns="http://www.w3.org/2000/svg" width="1100" height="240" viewBox="0 0 1100 240">
   <defs>
     <!-- Font Imports & Styles -->
     <style>
-      @import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&amp;family=Space+Grotesk:wght@500;700&amp;display=swap');
+      @import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&amp;family=Space+Grotesk:wght@500;700;800&amp;display=swap');
 
       .title-parth {
         font-family: 'Plus Jakarta Sans', 'Space Grotesk', -apple-system, sans-serif;
         font-weight: 800;
-        font-size: 78px;
+        font-size: 64px;
         fill: #0F172A;
-        letter-spacing: -1.5px;
+        letter-spacing: -1.2px;
       }
 
       .title-khowal {
         font-family: 'Plus Jakarta Sans', 'Space Grotesk', -apple-system, sans-serif;
         font-weight: 800;
-        font-size: 78px;
+        font-size: 64px;
         fill: url(#khowalGradient);
-        letter-spacing: -1.5px;
-      }
-
-      .subtitle {
-        font-family: 'Plus Jakarta Sans', sans-serif;
-        font-weight: 500;
-        font-size: 22px;
-        fill: #334155;
-      }
-
-      .card-title {
-        font-family: 'Plus Jakarta Sans', sans-serif;
-        font-weight: 700;
-        font-size: 13.5px;
-        fill: #1E293B;
-        letter-spacing: 0.8px;
-      }
-
-      .card-desc {
-        font-family: 'Plus Jakarta Sans', sans-serif;
-        font-weight: 500;
-        font-size: 11px;
-        fill: #64748B;
-        line-height: 1.45;
+        letter-spacing: -1.2px;
       }
 
       /* 🌟 Smooth Continuous Wave Animations */
@@ -68,22 +45,6 @@
         0% { transform: translateX(0px); }
         50% { transform: translateX(-140px); }
         100% { transform: translateX(0px); }
-      }
-
-      /* Floating Action Cards - Applied ONLY to Inner Group */
-      .floating-inner {
-        animation: cardFloat 4.5s ease-in-out infinite alternate;
-      }
-
-      .card-1 { animation-delay: 0s; }
-      .card-2 { animation-delay: 0.7s; }
-      .card-3 { animation-delay: 1.4s; }
-      .card-4 { animation-delay: 2.1s; }
-      .card-5 { animation-delay: 2.8s; }
-
-      @keyframes cardFloat {
-        0% { transform: translateY(0px); }
-        100% { transform: translateY(-8px); }
       }
 
       /* Rotating Background Circuit Rings */
@@ -162,11 +123,6 @@
     </linearGradient>
 
     <!-- Filters -->
-    <filter id="cardShadow" x="-20%" y="-20%" width="140%" height="140%">
-      <feDropShadow dx="0" dy="8" stdDeviation="10" flood-color="#64748B" flood-opacity="0.12"/>
-      <feDropShadow dx="0" dy="2" stdDeviation="4" flood-color="#0F172A" flood-opacity="0.06"/>
-    </filter>
-
     <filter id="orbGlow" x="-50%" y="-50%" width="200%" height="200%">
       <feGaussianBlur stdDeviation="16" result="blur"/>
       <feMerge>
@@ -182,14 +138,14 @@
   </defs>
 
   <!-- Soft Light Shade Canvas Background -->
-  <rect width="1100" height="530" fill="url(#bgLightShade)" rx="20" stroke="#CBD5E1" stroke-width="1.5"/>
+  <rect width="1100" height="240" fill="url(#bgLightShade)" rx="20" stroke="#CBD5E1" stroke-width="1.5"/>
 
   <!-- Background Grid Patterns -->
-  <rect x="24" y="24" width="130" height="100" fill="url(#dotGrid)" opacity="0.75"/>
-  <rect x="980" y="200" width="90" height="112" fill="url(#dotGrid)" opacity="0.75"/>
+  <rect x="24" y="20" width="130" height="100" fill="url(#dotGrid)" opacity="0.75"/>
+  <rect x="980" y="20" width="90" height="100" fill="url(#dotGrid)" opacity="0.75"/>
 
   <!-- Left Side Glowing Blue Orb -->
-  <circle cx="-15" cy="200" r="85" fill="url(#blueOrbGrad)" filter="url(#orbGlow)"/>
+  <circle cx="-15" cy="100" r="75" fill="url(#blueOrbGrad)" filter="url(#orbGlow)"/>
 
   <!-- Top Right Rotating Concentric Rings & Circuit Traces -->
   <g opacity="0.35">
@@ -199,157 +155,58 @@
       <circle cx="1040" cy="50" r="38" stroke="#06B6D4" stroke-width="1" fill="none"/>
     </g>
     <circle cx="1065" cy="95" r="5" fill="#06B6D4" class="glowing-dot"/>
-    <path d="M950 150 L980 150 L1000 170 L1050 170" stroke="#94A3B8" stroke-width="1" fill="none"/>
-    <circle cx="1050" cy="170" r="3" fill="#3B82F6"/>
     
-    <circle cx="60" cy="180" r="120" stroke="#CBD5E1" stroke-width="1" fill="none"/>
-    <circle cx="60" cy="180" r="75" stroke="#E2E8F0" stroke-width="1" fill="none"/>
-    <circle cx="120" cy="200" r="4" fill="#3B82F6" class="glowing-dot"/>
+    <circle cx="60" cy="90" r="100" stroke="#CBD5E1" stroke-width="1" fill="none"/>
+    <circle cx="60" cy="90" r="60" stroke="#E2E8F0" stroke-width="1" fill="none"/>
+    <circle cx="120" cy="100" r="4" fill="#3B82F6" class="glowing-dot"/>
   </g>
 
-  <!-- Top Center Code Symbol & Lines -->
-  <g transform="translate(550, 58)" text-anchor="middle">
-    <line x1="-130" y1="0" x2="-45" y2="0" stroke="#CBD5E1" stroke-width="1.5" stroke-linecap="round"/>
-    <circle cx="-130" cy="0" r="3" fill="#3B82F6"/>
-    <text x="0" y="6" font-family="'Plus Jakarta Sans', sans-serif" font-weight="700" font-size="22" fill="#3B82F6" text-anchor="middle">&lt;/&gt;</text>
-    <line x1="45" y1="0" x2="130" y2="0" stroke="#CBD5E1" stroke-width="1.5" stroke-linecap="round"/>
-    <circle cx="130" cy="0" r="3" fill="#06B6D4"/>
+  <!-- Top Center Code Symbol & Accent Lines -->
+  <g transform="translate(550, 48)" text-anchor="middle">
+    <line x1="-140" y1="0" x2="-45" y2="0" stroke="#CBD5E1" stroke-width="1.5" stroke-linecap="round"/>
+    <circle cx="-140" cy="0" r="3.5" fill="#3B82F6"/>
+    <text x="0" y="7" font-family="'Plus Jakarta Sans', sans-serif" font-weight="800" font-size="24" fill="#3B82F6" text-anchor="middle">&lt;/&gt;</text>
+    <line x1="45" y1="0" x2="140" y2="0" stroke="#CBD5E1" stroke-width="1.5" stroke-linecap="round"/>
+    <circle cx="140" cy="0" r="3.5" fill="#06B6D4"/>
   </g>
 
   <!-- Main Title: PARTH KHOWAL -->
-  <g transform="translate(550, 145)" text-anchor="middle">
+  <g transform="translate(550, 130)" text-anchor="middle">
     <text x="0" y="0">
       <tspan class="title-parth">PARTH </tspan>
       <tspan class="title-khowal">KHOWAL</tspan>
     </text>
   </g>
 
-  <!-- Subtitle -->
-  <g transform="translate(550, 192)" text-anchor="middle">
-    <text x="0" y="0" class="subtitle">
-      Building intelligent solutions with <tspan font-weight="700" fill="#6366F1">AI</tspan>, <tspan font-weight="700" fill="#2563EB">data</tspan> and <tspan font-weight="700" fill="#0D9488">code</tspan>.
-    </text>
+  <!-- Accent Lines under Name -->
+  <g transform="translate(550, 152)">
+    <circle cx="0" cy="0" r="3.5" fill="#3B82F6"/>
+    <line x1="-50" y1="0" x2="-12" y2="0" stroke="#CBD5E1" stroke-width="1.5" stroke-linecap="round"/>
+    <line x1="12" y1="0" x2="50" y2="0" stroke="#CBD5E1" stroke-width="1.5" stroke-linecap="round"/>
   </g>
 
-  <!-- Small Accent Dot under Subtitle -->
-  <circle cx="550" cy="214" r="3.5" fill="#3B82F6"/>
-  <line x1="500" y1="214" x2="538" y2="214" stroke="#CBD5E1" stroke-width="1.5"/>
-  <line x1="562" y1="214" x2="600" y2="214" stroke="#CBD5E1" stroke-width="1.5"/>
-
-  <!-- 5 Action / Value Cards Row — Streamlined & Floating Animation -->
-  <g transform="translate(42, 238)">
-    
-    <!-- Card 1: DEVELOP -->
-    <g transform="translate(0, 0)">
-      <g class="floating-inner card-1">
-        <rect width="170" height="150" rx="18" fill="#FFFFFF" filter="url(#cardShadow)"/>
-        <g transform="translate(85, 36)">
-          <circle cx="0" cy="0" r="22" fill="#EFF6FF"/>
-          <path d="M-7 -4 L-12 0 L-7 4 M7 -4 L12 0 L7 4 M-2 6 L2 -6" stroke="#2563EB" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
-        </g>
-        <text x="85" y="80" text-anchor="middle" class="card-title">DEVELOP</text>
-        <circle cx="85" cy="89" r="2" fill="#2563EB"/>
-        <text x="85" y="108" text-anchor="middle" class="card-desc">Write clean, efficient</text>
-        <text x="85" y="123" text-anchor="middle" class="card-desc">and scalable code.</text>
-      </g>
-    </g>
-
-    <!-- Card 2: LEARN -->
-    <g transform="translate(212, 0)">
-      <g class="floating-inner card-2">
-        <rect width="170" height="150" rx="18" fill="#FFFFFF" filter="url(#cardShadow)"/>
-        <g transform="translate(85, 36)">
-          <circle cx="0" cy="0" r="22" fill="#EEF2FF"/>
-          <path d="M-10 -6 C-6 -8 0 -6 0 -6 C0 -6 6 -8 10 -6 L10 7 C6 5 0 7 0 7 C0 7 -6 5 -10 7 Z M0 -6 L0 7" stroke="#4F46E5" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
-        </g>
-        <text x="85" y="80" text-anchor="middle" class="card-title">LEARN</text>
-        <circle cx="85" cy="89" r="2" fill="#4F46E5"/>
-        <text x="85" y="108" text-anchor="middle" class="card-desc">Stay curious and</text>
-        <text x="85" y="123" text-anchor="middle" class="card-desc">keep learning everyday.</text>
-      </g>
-    </g>
-
-    <!-- Card 3: ANALYZE -->
-    <g transform="translate(424, 0)">
-      <g class="floating-inner card-3">
-        <rect width="170" height="150" rx="18" fill="#FFFFFF" filter="url(#cardShadow)"/>
-        <g transform="translate(85, 36)">
-          <circle cx="0" cy="0" r="22" fill="#F0F9FF"/>
-          <path d="M-10 8 L-10 3 M-4 8 L-4 -4 M2 8 L2 0 M8 8 L8 -8 M-10 1 L-4 -5 L2 -1 L9 -9" stroke="#0284C7" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
-          <circle cx="9" cy="-9" r="2" fill="#0284C7"/>
-        </g>
-        <text x="85" y="80" text-anchor="middle" class="card-title">ANALYZE</text>
-        <circle cx="85" cy="89" r="2" fill="#0284C7"/>
-        <text x="85" y="108" text-anchor="middle" class="card-desc">Transform data into</text>
-        <text x="85" y="123" text-anchor="middle" class="card-desc">meaningful insights.</text>
-      </g>
-    </g>
-
-    <!-- Card 4: INNOVATE -->
-    <g transform="translate(636, 0)">
-      <g class="floating-inner card-4">
-        <rect width="170" height="150" rx="18" fill="#FFFFFF" filter="url(#cardShadow)"/>
-        <g transform="translate(85, 36)">
-          <circle cx="0" cy="0" r="22" fill="#F5F3FF"/>
-          <path d="M-7 -3 C-7 -7 -4 -10 0 -10 C4 -10 7 -7 7 -3 C7 0 4 2 3 5 L-3 5 C-4 2 -7 0 -7 -3 Z M-3 8 L3 8" stroke="#7C3AED" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
-          <line x1="0" y1="-14" x2="0" y2="-12" stroke="#7C3AED" stroke-width="2" stroke-linecap="round"/>
-          <line x1="-11" y1="-3" x2="-9" y2="-3" stroke="#7C3AED" stroke-width="2" stroke-linecap="round"/>
-          <line x1="9" y1="-3" x2="11" y2="-3" stroke="#7C3AED" stroke-width="2" stroke-linecap="round"/>
-        </g>
-        <text x="85" y="80" text-anchor="middle" class="card-title">INNOVATE</text>
-        <circle cx="85" cy="89" r="2" fill="#7C3AED"/>
-        <text x="85" y="108" text-anchor="middle" class="card-desc">Think beyond</text>
-        <text x="85" y="123" text-anchor="middle" class="card-desc">boundaries and build.</text>
-      </g>
-    </g>
-
-    <!-- Card 5: CREATE IMPACT -->
-    <g transform="translate(848, 0)">
-      <g class="floating-inner card-5">
-        <rect width="170" height="150" rx="18" fill="#FFFFFF" filter="url(#cardShadow)"/>
-        <g transform="translate(85, 36)">
-          <circle cx="0" cy="0" r="22" fill="#ECFEFF"/>
-          <path d="M-2 9 C-2 9 -8 6 -9 2 C-9 -2 -4 -8 4 -10 C6 -2 2 8 -2 9 Z M-6 4 C-4 8 2 9 2 9 M-5 -3 C-3 -3 -3 -5 -5 -3" stroke="#06B6D4" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
-          <circle cx="0" cy="-4" r="2" stroke="#06B6D4" stroke-width="2" fill="none"/>
-        </g>
-        <text x="85" y="80" text-anchor="middle" class="card-title">CREATE IMPACT</text>
-        <circle cx="85" cy="89" r="2" fill="#06B6D4"/>
-        <text x="85" y="108" text-anchor="middle" class="card-desc">Build solutions that</text>
-        <text x="85" y="123" text-anchor="middle" class="card-desc">solve real problems.</text>
-      </g>
-    </g>
-
-  </g>
-
-  <!-- 🌊 Continuous Animated Layered Waves & Mesh Network Background -->
-  <g transform="translate(0, 390)">
-    
+  <!-- 🌊 Continuous Animated Layered Waves Background -->
+  <g transform="translate(0, 155)">
     <!-- Background Wave Mesh Lines & Pulsing Nodes -->
     <g stroke="#93C5FD" stroke-width="0.75" opacity="0.35" fill="none" class="wave-layer-3">
-      <path d="M-200 40 Q 150 10 500 50 T 1100 30 T 1500 40"/>
-      <path d="M-200 60 Q 250 20 600 70 T 1200 40 T 1500 60"/>
-      <path d="M-200 80 Q 200 50 550 90 T 1150 60 T 1500 80"/>
-      <line x1="150" y1="45" x2="320" y2="25"/>
-      <line x1="320" y1="25" x2="520" y2="65"/>
-      <line x1="520" y1="65" x2="800" y2="35"/>
-      <circle cx="150" cy="45" r="4" fill="#3B82F6" class="glowing-dot"/>
-      <circle cx="320" cy="25" r="3" fill="#6366F1" class="glowing-dot"/>
-      <circle cx="520" cy="65" r="4.5" fill="#8B5CF6" class="glowing-dot"/>
-      <circle cx="800" cy="35" r="4" fill="#06B6D4" class="glowing-dot"/>
+      <path d="M-200 20 Q 150 5 500 25 T 1100 15 T 1500 20"/>
+      <path d="M-200 30 Q 250 10 600 35 T 1200 20 T 1500 30"/>
+      <circle cx="150" cy="20" r="3.5" fill="#3B82F6" class="glowing-dot"/>
+      <circle cx="520" cy="25" r="4" fill="#8B5CF6" class="glowing-dot"/>
+      <circle cx="800" cy="18" r="3.5" fill="#06B6D4" class="glowing-dot"/>
     </g>
 
     <!-- Wave Layer 3 (Deepest) -->
-    <path class="wave-layer-3" d="M-200,30 C100,-10 350,70 600,20 C850,-30 1050,50 1400,10 L1400,150 L-200,150 Z" fill="url(#waveGrad3)"/>
+    <path class="wave-layer-3" d="M-200,20 C100,-5 350,40 600,15 C850,-15 1050,30 1400,10 L1400,100 L-200,100 Z" fill="url(#waveGrad3)"/>
 
     <!-- Wave Layer 2 (Middle) -->
-    <path class="wave-layer-2" d="M-200,50 C150,0 400,80 650,30 C900,-20 1050,65 1400,25 L1400,150 L-200,150 Z" fill="url(#waveGrad2)"/>
+    <path class="wave-layer-2" d="M-200,50 C150,0 400,50 650,20 C900,-10 1050,40 1400,15 L1400,100 L-200,100 Z" fill="url(#waveGrad2)"/>
 
     <!-- Wave Layer 1 (Foreground Main Wave) -->
-    <path class="wave-layer-1" d="M-200,70 C200,20 480,100 750,45 C950,0 1150,70 1400,40 L1400,150 L-200,150 Z" fill="url(#waveGrad1)"/>
-
+    <path class="wave-layer-1" d="M-200,45 C200,15 480,60 750,30 C950,0 1150,45 1400,25 L1400,100 L-200,100 Z" fill="url(#waveGrad1)"/>
   </g>
 
   <!-- Shimmer Highlight Sweep Across Canvas -->
-  <rect class="shimmer-line" x="0" y="0" width="130" height="530" fill="url(#shimmerGrad)" transform="skewX(-20)" style="mix-blend-mode: overlay; pointer-events: none;"/>
+  <rect class="shimmer-line" x="0" y="0" width="130" height="240" fill="url(#shimmerGrad)" transform="skewX(-20)" style="mix-blend-mode: overlay; pointer-events: none;"/>
 
 </svg>

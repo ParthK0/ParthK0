@@ -1,5 +1,5 @@
 <p align="center">
-  <a href="https://www.linkedin.com/in/parth-khowal-a37903294/"><img src="https://raw.githubusercontent.com/ParthK0/ParthK0/main/assets/hero.svg?v=3" width="100%" alt="Parth Khowal — Building intelligent solutions with AI, data and code." /></a>
+  <a href="https://www.linkedin.com/in/parth-khowal-a37903294/"><img src="https://raw.githubusercontent.com/ParthK0/ParthK0/main/assets/hero.svg?v=4" width="100%" alt="Parth Khowal" /></a>
 </p>
 
 <br/>
