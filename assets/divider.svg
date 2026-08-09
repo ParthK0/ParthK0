@@ -1,32 +1,32 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="1000" height="16" viewBox="0 0 1000 16">
   <defs>
-    <linearGradient id="divGrad" x1="0%" y1="0%" x2="100%" y2="0%">
-      <stop offset="0%" style="stop-color:#3B82F6;stop-opacity:0"/>
-      <stop offset="15%" style="stop-color:#3B82F6;stop-opacity:0.8"/>
-      <stop offset="50%" style="stop-color:#8B5CF6;stop-opacity:0.9"/>
-      <stop offset="85%" style="stop-color:#06B6D4;stop-opacity:0.8"/>
-      <stop offset="100%" style="stop-color:#06B6D4;stop-opacity:0"/>
+    <linearGradient id="divGradDark" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#38BDF8;stop-opacity:0"/>
+      <stop offset="15%" style="stop-color:#38BDF8;stop-opacity:0.85"/>
+      <stop offset="50%" style="stop-color:#818CF8;stop-opacity:0.95"/>
+      <stop offset="85%" style="stop-color:#22D3EE;stop-opacity:0.85"/>
+      <stop offset="100%" style="stop-color:#22D3EE;stop-opacity:0"/>
     </linearGradient>
-    <linearGradient id="divShimmer" x1="-100%" y1="0%" x2="0%" y2="0%">
+    <linearGradient id="divShimmerDark" x1="-100%" y1="0%" x2="0%" y2="0%">
       <stop offset="0%" style="stop-color:transparent"/>
       <stop offset="45%" style="stop-color:transparent"/>
-      <stop offset="50%" style="stop-color:rgba(255,255,255,0.8)"/>
+      <stop offset="50%" style="stop-color:rgba(255,255,255,0.9)"/>
       <stop offset="55%" style="stop-color:transparent"/>
       <stop offset="100%" style="stop-color:transparent"/>
       <animate attributeName="x1" values="-100%;200%" dur="3s" repeatCount="indefinite"/>
       <animate attributeName="x2" values="0%;300%" dur="3s" repeatCount="indefinite"/>
     </linearGradient>
-    <filter id="divGlow" x="-10%" y="-200%" width="120%" height="500%">
-      <feGaussianBlur stdDeviation="2" result="blur"/>
+    <filter id="divGlowDark" x="-10%" y="-200%" width="120%" height="500%">
+      <feGaussianBlur stdDeviation="3" result="blur"/>
       <feMerge>
         <feMergeNode in="blur"/>
         <feMergeNode in="SourceGraphic"/>
       </feMerge>
     </filter>
   </defs>
-  <line x1="0" y1="8" x2="1000" y2="8" stroke="url(#divGrad)" stroke-width="1.5" filter="url(#divGlow)"/>
-  <line x1="0" y1="8" x2="1000" y2="8" stroke="url(#divShimmer)" stroke-width="2"/>
+  <line x1="0" y1="8" x2="1000" y2="8" stroke="url(#divGradDark)" stroke-width="1.5" filter="url(#divGlowDark)"/>
+  <line x1="0" y1="8" x2="1000" y2="8" stroke="url(#divShimmerDark)" stroke-width="2"/>
   <!-- Center diamond accent -->
-  <polygon points="500,3 505,8 500,13 495,8" fill="url(#divGrad)" filter="url(#divGlow)"/>
-  <circle cx="500" cy="8" r="2" fill="#FFFFFF"/>
+  <polygon points="500,3 505,8 500,13 495,8" fill="url(#divGradDark)" filter="url(#divGlowDark)"/>
+  <circle cx="500" cy="8" r="2" fill="#F8FAFC"/>
 </svg>

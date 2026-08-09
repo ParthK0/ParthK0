@@ -38,9 +38,9 @@ I don't just prototype — I ship. From real-time facial recognition engines to 
 
 <div align="center">
 
-<img src="https://github-readme-stats.vercel.app/api?username=ParthK0&show_icons=true&icon_color=2563eb&title_color=1e293b&text_color=475569&bg_color=ffffff&border_color=e2e8f0&border_radius=12&include_all_commits=true&count_private=true" width="100%" alt="GitHub Stats"/>
+<img src="https://github-readme-stats.vercel.app/api?username=ParthK0&show_icons=true&icon_color=38bdf8&title_color=f8fafc&text_color=94a3b8&bg_color=0f172a&border_color=1e293b&border_radius=12&include_all_commits=true&count_private=true" width="100%" alt="GitHub Stats"/>
 
-<img src="https://streak-stats.demolab.com?user=ParthK0&theme=light&hide_border=false&border_radius=12&ring=2563eb&fire=3b82f6&currStreakLabel=2563eb&sideLabels=4f46e5&dates=64748b&currStreakNum=0f172a&sideNums=0f172a&background=ffffff&border=e2e8f0" width="100%" alt="GitHub Streak"/>
+<img src="https://streak-stats.demolab.com?user=ParthK0&theme=dark&hide_border=false&border_radius=12&ring=38bdf8&fire=818cf8&currStreakLabel=38bdf8&sideLabels=818cf8&dates=94a3b8&currStreakNum=f8fafc&sideNums=f8fafc&background=0f172a&border=1e293b" width="100%" alt="GitHub Streak"/>
 
 </div>
 
@@ -48,7 +48,7 @@ I don't just prototype — I ship. From real-time facial recognition engines to 
 </tr>
 </table>
 
-<img src="https://raw.githubusercontent.com/ParthK0/ParthK0/main/assets/divider.svg?v=3" width="100%" alt=""/>
+<img src="https://raw.githubusercontent.com/ParthK0/ParthK0/main/assets/divider.svg?v=4" width="100%" alt=""/>
 
 <!-- ═══════════════════════════════════════════════════════════ -->
 <!-- FEATURED PROJECTS -->
@@ -158,7 +158,7 @@ Full-stack quantitative research and analytics platform built on Next.js with Ty
 
 </details>
 
-<img src="https://raw.githubusercontent.com/ParthK0/ParthK0/main/assets/divider.svg?v=3" width="100%" alt=""/>
+<img src="https://raw.githubusercontent.com/ParthK0/ParthK0/main/assets/divider.svg?v=4" width="100%" alt=""/>
 
 <!-- ═══════════════════════════════════════════════════════════ -->
 <!-- TECH STACK -->
@@ -233,7 +233,7 @@ Full-stack quantitative research and analytics platform built on Next.js with Ty
 </tr>
 </table>
 
-<img src="https://raw.githubusercontent.com/ParthK0/ParthK0/main/assets/divider.svg?v=3" width="100%" alt=""/>
+<img src="https://raw.githubusercontent.com/ParthK0/ParthK0/main/assets/divider.svg?v=4" width="100%" alt=""/>
 
 <!-- ═══════════════════════════════════════════════════════════ -->
 <!-- GITHUB ANALYTICS & ACTIVITY -->
@@ -243,7 +243,7 @@ Full-stack quantitative research and analytics platform built on Next.js with Ty
 
 <div align="center">
 
-<img src="https://github-readme-activity-graph.vercel.app/graph?username=ParthK0&bg_color=ffffff&color=475569&line=2563eb&point=6366f1&area=true&area_color=6366f120&hide_border=false&border_color=e2e8f0&custom_title=Contribution%20Timeline" width="95%" alt="Contribution Graph"/>
+<img src="https://github-readme-activity-graph.vercel.app/graph?username=ParthK0&bg_color=0f172a&color=94a3b8&line=38bdf8&point=818cf8&area=true&area_color=38bdf820&hide_border=false&border_color=1e293b&custom_title=Contribution%20Timeline" width="95%" alt="Contribution Graph"/>
 
 </div>
 
@@ -251,7 +251,7 @@ Full-stack quantitative research and analytics platform built on Next.js with Ty
 
 <div align="center">
 
-<img width="42%" src="https://github-readme-stats.vercel.app/api/top-langs/?username=ParthK0&theme=default&border_radius=12&hide_border=false&border_color=e2e8f0&layout=compact&title_color=1e293b&text_color=475569&bg_color=ffffff" alt="Top Languages"/>
+<img width="42%" src="https://github-readme-stats.vercel.app/api/top-langs/?username=ParthK0&theme=dark&border_radius=12&hide_border=false&border_color=1e293b&layout=compact&title_color=f8fafc&text_color=94a3b8&bg_color=0f172a" alt="Top Languages"/>
 
 </div>
 
@@ -259,11 +259,11 @@ Full-stack quantitative research and analytics platform built on Next.js with Ty
 
 <div align="center">
 
-<img src="https://github-profile-trophies.vercel.app/?username=ParthK0&theme=flat&no-frame=true&no-bg=true&margin-w=6&column=7" alt="Trophies"/>
+<img src="https://github-profile-trophies.vercel.app/?username=ParthK0&theme=onedark&no-frame=true&no-bg=true&margin-w=6&column=7" alt="Trophies"/>
 
 </div>
 
-<img src="https://raw.githubusercontent.com/ParthK0/ParthK0/main/assets/divider.svg?v=3" width="100%" alt=""/>
+<img src="https://raw.githubusercontent.com/ParthK0/ParthK0/main/assets/divider.svg?v=4" width="100%" alt=""/>
 
 <!-- ═══════════════════════════════════════════════════════════ -->
 <!-- CONTRIBUTION SNAKE -->
@@ -288,7 +288,7 @@ Full-stack quantitative research and analytics platform built on Next.js with Ty
 <!-- ═══════════════════════════════════════════════════════════ -->
 
 <p align="center">
-  <img src="https://raw.githubusercontent.com/ParthK0/ParthK0/main/assets/footer.svg?v=4" width="100%" alt="Code. Coffee. Chaos. Repeat." />
+  <img src="https://raw.githubusercontent.com/ParthK0/ParthK0/main/assets/footer.svg?v=5" width="100%" alt="Code. Coffee. Chaos. Repeat." />
 </p>
 
 <p align="center">
@@ -300,6 +300,6 @@ Full-stack quantitative research and analytics platform built on Next.js with Ty
 
 <div align="center">
 
-<img src="https://komarev.com/ghpvc/?username=ParthK0&label=Profile%20Views&color=2563eb&style=flat-square" alt="Profile Views"/>
+<img src="https://komarev.com/ghpvc/?username=ParthK0&label=Profile%20Views&color=0284c7&style=flat-square" alt="Profile Views"/>
 
 </div>
